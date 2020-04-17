@@ -72,3 +72,4 @@ from Customer
 where Country = 'France'
 
 -- delete from OrderItem
+
