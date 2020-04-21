@@ -39,6 +39,7 @@ create table Factura
 	Valoarea nvarchar(20) NOT NULL,
 	Valoarea_TVA nvarchar(20) NOT NULL
 )
+go
 
 -- adaugare coloana de legatura in tabela Produs
 alter table Produs
@@ -48,4 +49,4 @@ go
 -- setare cheie straina/ foreign key (FK)
 alter table Produs				
 	add foreign key (ProdusID)		
-	references Produs(ID)
+	references Client(ID)
