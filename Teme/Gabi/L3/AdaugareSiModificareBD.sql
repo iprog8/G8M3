@@ -14,11 +14,11 @@ insert into factura
 	(DataEmisa,DataScadenta,Suma)
 values
 	('2014-04-12','2014-05-12','240'),
-	('2016-10-74','2016-11-74','300'),
+	('2016-10-27','2016-11-27','300'),
 	('2018-12-29','2019-01-29','150'),
 	('2020-06-16','2020-07-16','120');
 go
--- aici nu pot executa deoarece imi da eroarea asta : 'Conversion failed when converting date and/or time from character string.'
+
 insert into Produs 
 	(Denumire,Descriere,Pret,Stoc)
 values
@@ -38,11 +38,11 @@ set Pret = '3'
 where ID = 4
 go
 
--- aici nu am cum sa rulez din cauza erorii
+
 delete from factura
-where ID in (1,2)
+where ID in (9,10)
 go
--- asa ar fi trebuit sa arate daca nu imi dadea eroarea
+
 
 
 select *
