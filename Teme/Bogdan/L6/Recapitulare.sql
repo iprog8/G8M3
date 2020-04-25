@@ -144,3 +144,90 @@ values
 	('30','8','1','8','Nu'),
 	('31','17','','8','Nu');
 go
+
+
+
+--Cerinte
+
+--1.
+select *
+from Modul M inner join
+Grupa G on M.Id = G.ModulId
+Where G.ModulId = 1
+
+
+--2.
+select *
+from Cursant C inner join
+CursantGrupa CG on C.Id = CG.CursantId inner join
+Grupa G on G.Id = CG.GrupaId
+where CG.GrupaId = 2
+
+--3.
+select *
+from Modul M left join
+Grupa G on M.Id = G.ModulId
+where G.ModulId is null
+
+
+--4.
+select *
+from Cursant C right join
+CursantGrupa CG on C.Id = CG.CursantId
+where GrupaId is NULL
+
+--5.
+select *
+from Cursant C inner join
+CursantGrupa CG on C.Id = CG.CursantId inner join
+Grupa G on G.Id = CG.GrupaId inner join
+Modul M on M.Id = G.ModulId
+Where G.ModulId = 1
+
+--6.
+select Id, Nume
+from Cursant
+
+--7.
+select 
+	count(*) 
+from Cursant
+
+--8.
+select 
+	Nume, Tara
+from Cursant
+where Tara = 'Romania'
+
+--9.
+select  
+	Tara,
+	count(Tara) as CursantidinRomania
+from Cursant
+where Tara = 'Romania'
+group by Tara
+
+--10.
+select
+	NotaFinala
+from CursantGrupa
+where NotaFinala > 7
+
+--11.
+select
+	AVG(NULLIF(NotaFinala,0)) MediaNotelorTuturorCursantilor
+from CursantGrupa
+
+--12.
+select
+	CursantId,
+	AVG(NULLIF(NotaFinala,0)) MediatNotelorCursantului
+from CursantGrupa
+group by CursantId
+
+--pentru verificare
+select
+	CursantId,
+	NotaFinala
+from CursantGrupa
+order by CursantId
