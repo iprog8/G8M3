@@ -48,7 +48,7 @@ create table CursantGrupa
 	Id int primary key,
 	CursantId int foreign key references Cursant(Id),
 	GrupaId int foreign key references Grupa(Id),
-	NotaFinala nvarchar(20),
+	NotaFinala int,
 	Continua nvarchar(3)
 )
 go
