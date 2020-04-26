@@ -165,27 +165,12 @@ go
 
 	--calculati media notelor ptr fiecare cursant (agregare+grupare)
 
-	select
-	avg(NotaFinala) MedieCursant
-	from CursantGrupa
-	where CursantId=1
-
-	select
-	avg(NotaFinala) MedieCursant
-	from CursantGrupa
-	where CursantId=2
-
-	select
-	avg(NotaFinala) MedieCursant
-	from CursantGrupa
-	where CursantId=3
-
-	select
-	avg(NotaFinala) MedieCursant
-	from CursantGrupa
-	where CursantId=4
 	
-
+	select
+	CursantId,
+	avg(NotaFinala) MedieCursant
+	from CursantGrupa
+	group by CursantId
 	
 
 
