@@ -9,7 +9,7 @@ O.OrderDate,
 C.Id as CustomerId,
 C.FirstName + ' ' + C.LastName as [Name]
 from Customer C left join [Order] O on O.CustomerId = C.Id
-where O.OrderNumber is null
+where O.Id is null
 go
 
 --punctul 2
@@ -18,8 +18,8 @@ select
 P.ProductName,
 P.IsDiscontinued,
 Oi.ProductId
-from Product P inner join OrderItem Oi on Oi.ProductId = P.Id
-where P.IsDiscontinued = 1
+from Product P left join OrderItem Oi on Oi.ProductId = P.Id
+where Oi.Id is null
 go
 
 --punctul 3
