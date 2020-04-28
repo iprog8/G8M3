@@ -83,5 +83,52 @@ on P.Id=Oi.ProductId
  on O.Id=Oi.OrderId
 
 
+ 
 
+
+
+ CREATE DATABASE IPRO
+	go
+
+	USE IPRO
+	go
+
+	CREATE TABLE Cursant
+(
+	ID INT Primary Key,
+	Nume nvarchar(50) NOT NULL,
+	DataNastere date,
+	Localitate nvarchar(30),
+	Tara nvarchar(20)
+
+)
+
+	CREATE TABLE Modul
+(
+	ID INT Primary Key,
+	Denumire nvarchar(50) NOT NULL,
+	NumarOre nvarchar(50) NOT NULL, 
+	ZileCoddingNOT int NOT NULL
+	
+)
+	CREATE TABLE Grupa
+
+(	ID INT Primary Key,
+	ModulID int NOT NULL,
+	Denumire nvarchar(50) NOT NULL,
+	DataStart date NOT NULL,
+	DataStartCodding date NOT NULL
+
+	)
+
+	CREATE TABLE IPRO.dbo.CursantGrupa
+
+(	ID INT Primary Key,
+	CursantID int NOT NULL,
+	GrupaID int NOT NULL,
+	Denumire nvarchar(50) NOT NULL,
+	NotaFinala int NOT NULL,
+	Continua bit  NOT NULL
+
+	)
 
