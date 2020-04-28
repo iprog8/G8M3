@@ -4,7 +4,7 @@
 create database IPRO
 go
 
-create table Cursant 
+create table Cursant
 (
 	Id int primary key,
 	Nume nvarchar(50),
@@ -62,23 +62,23 @@ go
 insert into Cursant
 	(Id, Nume, DataNastere, Localitate, Tara)
 values
-	('1','Geagu Bogdan','19931111','Mioveni','Romania'),
-	('2','Pirvan Cristiana','19931010','Rosiorii de Vede','Romania'),
-	('3','Staicu Sorina','20000909','Bucuresti','Romania'),
-	('4','Avram Cristian','19970226','Craiova','Romania'),
-	('5','Vlad Octavian','19880808','Bucuresti','Romania'),
-	('6','Mioara Manuela','19850707','Bucuresti','Romania'),
-	('7','Letiția Provian','19890320','Bucuresti','Romania'),
-	('8','Shirina-Maria Stefanescu-Albu','19861212','Bucuresti','Romania'),
-	('9','Gabriel Hanu','20030606','Focsani','Romania'),
-	('10','Alina Rudi','19900505','Campina','Romania'),
-	('11','Meli Nagy','19780404','Bucuresti','Romania'),
-	('12','Mădălina Dumitrache','19980303','London','UK'),
-	('13','Denisa Gindila','20021014','Bucuresti','Romania'),
-	('14','Neflait Ovidiu Codreanu','19791203','Vaslui','Romania'),
-	('15','Mihaela Ionita','19900510','Bucuresti','Romania'),
-	('16','Ionescu Letitia','19900303','Bucuresti','Romania'),
-	('17','Ovidiu Rudi','19960501','Campina','Romania');
+	('1', 'Geagu Bogdan', '19931111', 'Mioveni', 'Romania'),
+	('2', 'Pirvan Cristiana', '19931010', 'Rosiorii de Vede', 'Romania'),
+	('3', 'Staicu Sorina', '20000909', 'Bucuresti', 'Romania'),
+	('4', 'Avram Cristian', '19970226', 'Craiova', 'Romania'),
+	('5', 'Vlad Octavian', '19880808', 'Bucuresti', 'Romania'),
+	('6', 'Mioara Manuela', '19850707', 'Bucuresti', 'Romania'),
+	('7', 'Letiția Provian', '19890320', 'Bucuresti', 'Romania'),
+	('8', 'Shirina-Maria Stefanescu-Albu', '19861212', 'Bucuresti', 'Romania'),
+	('9', 'Gabriel Hanu', '20030606', 'Focsani', 'Romania'),
+	('10', 'Alina Rudi', '19900505', 'Campina', 'Romania'),
+	('11', 'Meli Nagy', '19780404', 'Bucuresti', 'Romania'),
+	('12', 'Mădălina Dumitrache', '19980303', 'London', 'UK'),
+	('13', 'Denisa Gindila', '20021014', 'Bucuresti', 'Romania'),
+	('14', 'Neflait Ovidiu Codreanu', '19791203', 'Vaslui', 'Romania'),
+	('15', 'Mihaela Ionita', '19900510', 'Bucuresti', 'Romania'),
+	('16', 'Ionescu Letitia', '19900303', 'Bucuresti', 'Romania'),
+	('17', 'Ovidiu Rudi', '19960501', 'Campina', 'Romania');
 go
 
 
@@ -87,11 +87,10 @@ go
 insert into Modul
 	(Id, Denumire, NumarOre, ZileCodding)
 values
-	('1','M1: Introducere in lumea programarii','120','1'),
-	('2','M2: Web-ul este viitorul','120','2'),
-	('3','M3: OOP','120','2'),
-	('4','M4','120','2'),
-	('5','G10M1','120','1')
+	('1', 'M1: Introducere in lumea programarii', '120', '1'),
+	('2', 'M2: Web-ul este viitorul', '120', '2'),
+	('3', 'M3: OOP', '120', '2'),
+	('4', 'M4', '120', '2')
 go
 
 
@@ -100,10 +99,10 @@ go
 insert into Grupa
 	(Id, ModulId, Denumire, DataStart, DataStartCodding)
 values
-	('1','1','G8M1','20191031','20191105'),
-	('2','2','G8M2','20200114','20200116'),
-	('3','3','G8M3','20200406','20200407'),
-	('5','5','G10M1','20200405','20200406');
+	('1', '1', 'G8M1', '20191031', '20191105'),
+	('2', '2', 'G8M2', '20200114', '20200116'),
+	('3', '3', 'G8M3', '20200406', '20200407'),
+	('5', '1', 'G10M1', '20200405', '20200406');
 go
 
 
@@ -112,37 +111,37 @@ go
 insert into CursantGrupa
 	(Id, CursantId, GrupaId, NotaFinala, Continua)
 values
-	('1','1','1','10','Da'),
-	('2','3','1','10','Da'),
-	('3','4','2','10','Da'),
-	('4','2','1','9','Da'),
-	('5','1','2','7','Da'),
-	('6','3','2','10','Nu'),
-	('7','2','2','8','Da'),
-	('8','1','3','',''),
-	('9','4','2','10','Da'),
-	('10','2','3','',''),
-	('11','12','1','7','Nu'),
-	('12','5','1','10','Da'),
-	('13','4','3','',''),
-	('14','11','1','9','Da'),
-	('15','5','3','',''),
-	('16','7','2','9','Da'),
-	('17','15','1','8','Nu'),
-	('18','6','2','9','Da'),
-	('19','5','2','10','Da'),
-	('20','14','2','7','Nu'),
-	('21','7','3','',''),
-	('22','9','2','10','Da'),
-	('23','6','3','',''),
-	('24','14','1','7','Da'),
-	('25','9','1','10','Da'),
-	('26','6','1','9','Da'),
-	('27','10','2','10','Nu'),
-	('28','9','3','',''),
-	('29','7','1','9','Da'),
-	('30','8','1','8','Nu'),
-	('31','17','','8','Nu');
+	('1', '1', '1', '10', 'Da'),
+	('2', '3', '1', '10', 'Da'),
+	('3', '4', '2', '10', 'Da'),
+	('4', '2', '1', '9', 'Da'),
+	('5', '1', '2', '7', 'Da'),
+	('6', '3', '2', '10', 'Nu'),
+	('7', '2', '2', '8', 'Da'),
+	('8', '1', '3', '', ''),
+	('9', '4', '2', '10', 'Da'),
+	('10', '2', '3', '', ''),
+	('11', '12', '1', '7', 'Nu'),
+	('12', '5', '1', '10', 'Da'),
+	('13', '4', '3', '', ''),
+	('14', '11', '1', '9', 'Da'),
+	('15', '5', '3', '', ''),
+	('16', '7', '2', '9', 'Da'),
+	('17', '15', '1', '8', 'Nu'),
+	('18', '6', '2', '9', 'Da'),
+	('19', '5', '2', '10', 'Da'),
+	('20', '14', '2', '7', 'Nu'),
+	('21', '7', '3', '', ''),
+	('22', '9', '2', '10', 'Da'),
+	('23', '6', '3', '', ''),
+	('24', '14', '1', '7', 'Da'),
+	('25', '9', '1', '10', 'Da'),
+	('26', '6', '1', '9', 'Da'),
+	('27', '10', '2', '10', 'Nu'),
+	('28', '9', '3', '', ''),
+	('29', '7', '1', '9', 'Da'),
+	('30', '8', '1', '8', 'Nu'),
+	('31', '17', '', '8', 'Nu');
 go
 
 
@@ -152,36 +151,36 @@ go
 --1.
 select *
 from Modul M inner join
-Grupa G on M.Id = G.ModulId
+	Grupa G on M.Id = G.ModulId
 Where G.ModulId = 1
 
 
 --2.
 select *
 from Cursant C inner join
-CursantGrupa CG on C.Id = CG.CursantId inner join
-Grupa G on G.Id = CG.GrupaId
+	CursantGrupa CG on C.Id = CG.CursantId inner join
+	Grupa G on G.Id = CG.GrupaId
 where CG.GrupaId = 2
 
 --3.
 select *
 from Modul M left join
-Grupa G on M.Id = G.ModulId
+	Grupa G on M.Id = G.ModulId
 where G.ModulId is null
 
 
 --4.
 select *
 from Cursant C right join
-CursantGrupa CG on C.Id = CG.CursantId
+	CursantGrupa CG on C.Id = CG.CursantId
 where GrupaId is NULL
 
 --5.
 select *
 from Cursant C inner join
-CursantGrupa CG on C.Id = CG.CursantId inner join
-Grupa G on G.Id = CG.GrupaId inner join
-Modul M on M.Id = G.ModulId
+	CursantGrupa CG on C.Id = CG.CursantId inner join
+	Grupa G on G.Id = CG.GrupaId inner join
+	Modul M on M.Id = G.ModulId
 Where G.ModulId = 1
 
 --6.
@@ -189,18 +188,18 @@ select Id, Nume
 from Cursant
 
 --7.
-select 
-	count(*) 
+select
+	count(*)
 from Cursant
 
 --8.
-select 
+select
 	Nume, Tara
 from Cursant
 where Tara = 'Romania'
 
 --9.
-select  
+select
 	Tara,
 	count(Tara) as CursantidinRomania
 from Cursant
