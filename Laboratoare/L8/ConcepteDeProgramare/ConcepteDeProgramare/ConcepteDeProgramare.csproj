@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8E791D75-AC20-49AE-85AC-904AE9E84924}</ProjectGuid>
+    <ProjectGuid>{7E4F6274-6EE7-4243-9363-22A9B2FF2E00}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PrimaAplicatie</RootNamespace>
-    <AssemblyName>PrimaAplicatie</AssemblyName>
+    <RootNamespace>ConcepteDeProgramare</RootNamespace>
+    <AssemblyName>ConcepteDeProgramare</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Calcule\Calcule.csproj">
-      <Project>{c7203463-9fc3-4f92-be7d-9be8a77e1a71}</Project>
-      <Name>Calcule</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,10 @@
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.exe.config
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.exe
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.pdb
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\Calcule.dll
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\Calcule.pdb
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csprojAssemblyReference.cache
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csproj.CoreCompileInputs.cache
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csproj.CopyComplete
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.exe
+D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.pdb

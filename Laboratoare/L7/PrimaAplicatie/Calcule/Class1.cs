@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calcule
 {
-    public class Adunare
+    public class Class1
     {
-        public int Calculeaza(int a, int b)
-        {
-            int suma = a + b;
-
-            return suma;
-        }
     }
 }
