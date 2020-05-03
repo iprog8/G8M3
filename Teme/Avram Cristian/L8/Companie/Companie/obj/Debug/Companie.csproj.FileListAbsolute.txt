@@ -1,0 +1,7 @@
+D:\SQLS_C\G8M3\Teme\Avram Cristian\L8\Companie\Companie\bin\Debug\Companie.exe.config
+D:\SQLS_C\G8M3\Teme\Avram Cristian\L8\Companie\Companie\bin\Debug\Companie.exe
+D:\SQLS_C\G8M3\Teme\Avram Cristian\L8\Companie\Companie\bin\Debug\Companie.pdb
+D:\SQLS_C\G8M3\Teme\Avram Cristian\L8\Companie\Companie\obj\Debug\Companie.csprojAssemblyReference.cache
+D:\SQLS_C\G8M3\Teme\Avram Cristian\L8\Companie\Companie\obj\Debug\Companie.csproj.CoreCompileInputs.cache
+D:\SQLS_C\G8M3\Teme\Avram Cristian\L8\Companie\Companie\obj\Debug\Companie.exe
+D:\SQLS_C\G8M3\Teme\Avram Cristian\L8\Companie\Companie\obj\Debug\Companie.pdb

@@ -1,0 +1,6 @@
+D:\SQLS_C\G8M3\Laboratoare\Teme rezolvate\lab C\PrimaAplicatie\Calcule\bin\Debug\Calcule.dll
+D:\SQLS_C\G8M3\Laboratoare\Teme rezolvate\lab C\PrimaAplicatie\Calcule\bin\Debug\Calcule.pdb
+D:\SQLS_C\G8M3\Laboratoare\Teme rezolvate\lab C\PrimaAplicatie\Calcule\obj\Debug\Calcule.csprojAssemblyReference.cache
+D:\SQLS_C\G8M3\Laboratoare\Teme rezolvate\lab C\PrimaAplicatie\Calcule\obj\Debug\Calcule.csproj.CoreCompileInputs.cache
+D:\SQLS_C\G8M3\Laboratoare\Teme rezolvate\lab C\PrimaAplicatie\Calcule\obj\Debug\Calcule.dll
+D:\SQLS_C\G8M3\Laboratoare\Teme rezolvate\lab C\PrimaAplicatie\Calcule\obj\Debug\Calcule.pdb
