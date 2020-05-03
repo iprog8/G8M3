@@ -32,7 +32,7 @@ namespace Companie
             List<string> Angajati = new List<string>();
             Angajati.Add("Popescu");
             Angajati.Add("Ionescu");
-            Angajati.Add("Marinescu");
+            Angajati.Add("Marinesco");
 
              for (int i = 0; i < Angajati.Count; i++)
             {
