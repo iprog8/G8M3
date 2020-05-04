@@ -38,6 +38,7 @@ namespace Companie
             {
                 Console.WriteLine(Angajati[i]);
             }
+            
 
         }
         static void AfiseazaPare()
