@@ -19,6 +19,7 @@ select *
 from Customer C inner join [Order] O
 	on C.Id = O.CustomerId
 	where O.OrderNumber is null
+	
 
 --1 Selectati toti clientii care nu au facut nici o comanda. Hint: Left/Right Join.
 --Logica mea ma indreapta la urmatorul rationament: am tabela "Customer"(cerinta fiind legata de "selecteaza toti clientii" si o alta tabela. Nu stiu cu care sa fac join-ul.
