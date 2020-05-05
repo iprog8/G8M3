@@ -20,20 +20,20 @@ namespace Companie
         ulong cifraDeAfaceri;
         int datorii;
         ulong incasari;
+        static List<string> angajati = new List<string>();
         static void Main(string[] args)
         {
-            List<string> angajati = new List<string>();
             angajati.Add("Hanu Gabriel");
             angajati.Add("Avram Cristian");
             angajati.Add("Bogdan Geagu");
             angajati.Add("Vlad Octavian");
             angajati.Add("Letitia Provian");
             //afisare toti angajatii
-            for ( int i = 0; i < angajati.Count; i++)
+            for (int i = 0; i < angajati.Count; i++)
             {
                 Console.WriteLine(angajati[i]);
             }
-            for ( int i = 0; i < angajati.Count; i++)
+            for (int i = 0; i < angajati.Count; i++)
             {
                 if (i % 2 == 0)
                 {

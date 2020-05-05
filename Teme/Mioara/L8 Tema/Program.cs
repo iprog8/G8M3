@@ -8,11 +8,13 @@ namespace Companie
 {
     class Program
     {
+        static List<string> listaAngajati = new List<string>();
         static void Main(string[] args)
         {
             Variabile();
             VariabilaLista();
             Afiseaza();
+            Console.ReadKey();
         }
         static void Variabile()
 
@@ -32,22 +34,24 @@ namespace Companie
 
         static void VariabilaLista()
         {
-            List<string> listaAngajati = new List<string>();
             listaAngajati.Add("Chirica Denis");
             listaAngajati.Add("Chirila Sofia");
             listaAngajati.Add("Mitroi Maria");
         }
 
-  
-         static void Afiseaza()
 
+        static void Afiseaza()
         {
-            Console.WriteLine (listaAngajati);
+            //Console.WriteLine(listaAngajati);
+            foreach (var angajat in listaAngajati)
+            {
+                Console.WriteLine(angajat);
+            }
 
         }
 
 
     }
-    
+
 }
 
