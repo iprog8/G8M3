@@ -11,21 +11,36 @@ namespace ConcepteDeProgramare
     // - variabile
     // - variabile de tip lista
     // - structuri decizionale
-
     // - functii
     // - functii cu parametri
-    // - operatori (mate + booleni)
-    // - evenimente
     // - structuri repetitive
+    // - evenimente
+
+    // - operatori (mate + booleni)
     class Program
     {
         static void Main(string[] args)
         {
+            OperatoriiMatematiciSiBooleeni();
             StructuriRepetitive();
             StructuriDecizionale();
             VariabileLista();
             Variabile();
         }
+
+        static void OperatoriiMatematiciSiBooleeni()
+        {
+            // Matematici: +, *, -, /, %, ++, --, +=, -=, ...
+            int numar = 9;
+            numar += 3; //numar = numar + 3; //12
+            // Math.
+
+            //Booleeni: ==, >, <, >=, <=, !=, !, &&, ||
+            string mesaj = numar > 10 ? "Acest numar este mai mare ca 10" : "Acest numar este mai mic sau egal cu 10";
+            Console.WriteLine(mesaj);
+
+        }
+
         static void Variabile()
         {
             // - variabile
