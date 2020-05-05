@@ -145,7 +145,7 @@ go
 	where Tara='Romania'
 
 
-	--selectati toti cursantii a caror nota este mi mare de 7
+	--selectati toti cursantii a caror nota este mai mare de 7
 
 	select
 	CursantId,

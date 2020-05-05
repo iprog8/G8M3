@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemaL8", "TemaL8\TemaL8.csproj", "{35D342E7-DE61-410A-B5E9-1B108283F58B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calcule", "Calcule\Calcule.csproj", "{A4BE5D5C-5D4F-4676-89F7-7D8EDABCAF45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35D342E7-DE61-410A-B5E9-1B108283F58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D342E7-DE61-410A-B5E9-1B108283F58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D342E7-DE61-410A-B5E9-1B108283F58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D342E7-DE61-410A-B5E9-1B108283F58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BE5D5C-5D4F-4676-89F7-7D8EDABCAF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BE5D5C-5D4F-4676-89F7-7D8EDABCAF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BE5D5C-5D4F-4676-89F7-7D8EDABCAF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BE5D5C-5D4F-4676-89F7-7D8EDABCAF45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D93F6FB8-EAEC-4CCE-A456-C2AB1046BB62}
+	EndGlobalSection
+EndGlobal
