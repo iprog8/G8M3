@@ -1,0 +1,7 @@
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\TemaLab9\obj\Debug\Companie.csprojAssemblyReference.cache
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\TemaLab9\obj\Debug\Companie.csproj.CoreCompileInputs.cache
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\TemaLab9\bin\Debug\TemaLab9.exe.config
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\TemaLab9\bin\Debug\TemaLab9.exe
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\TemaLab9\bin\Debug\TemaLab9.pdb
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\TemaLab9\obj\Debug\TemaLab9.exe
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\TemaLab9\obj\Debug\TemaLab9.pdb

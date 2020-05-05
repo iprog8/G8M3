@@ -1,0 +1,8 @@
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\test\ClassLibrary2\bin\Debug\netstandard2.0\ClassLibrary2.deps.json
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\test\ClassLibrary2\bin\Debug\netstandard2.0\ClassLibrary2.dll
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\test\ClassLibrary2\bin\Debug\netstandard2.0\ClassLibrary2.pdb
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\test\ClassLibrary2\obj\Debug\netstandard2.0\ClassLibrary2.csproj.CoreCompileInputs.cache
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\test\ClassLibrary2\obj\Debug\netstandard2.0\ClassLibrary2.AssemblyInfoInputs.cache
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\test\ClassLibrary2\obj\Debug\netstandard2.0\ClassLibrary2.AssemblyInfo.cs
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\test\ClassLibrary2\obj\Debug\netstandard2.0\ClassLibrary2.dll
+D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L9\test\ClassLibrary2\obj\Debug\netstandard2.0\ClassLibrary2.pdb
