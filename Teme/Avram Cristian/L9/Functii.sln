@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "Functii\ConsoleApp1\ConsoleApp1.csproj", "{C60B04A1-D5A4-4A59-A02A-15D7E90F36D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functii", "C:\Users\tardy\source\repos\Functii\Functii\Functii.csproj", "{D97C9C19-C6BF-4B3F-B483-7F9CB4C49372}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C60B04A1-D5A4-4A59-A02A-15D7E90F36D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C60B04A1-D5A4-4A59-A02A-15D7E90F36D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C60B04A1-D5A4-4A59-A02A-15D7E90F36D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C60B04A1-D5A4-4A59-A02A-15D7E90F36D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97C9C19-C6BF-4B3F-B483-7F9CB4C49372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97C9C19-C6BF-4B3F-B483-7F9CB4C49372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97C9C19-C6BF-4B3F-B483-7F9CB4C49372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97C9C19-C6BF-4B3F-B483-7F9CB4C49372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1A236BB7-D3C4-45DB-AD9A-2E84D1ACB863}
+		SolutionGuid = {261AA683-E58C-4AC7-8A4A-34ADDECECB33}
 	EndGlobalSection
 EndGlobal
