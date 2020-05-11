@@ -14,18 +14,18 @@ namespace TemaLab9
 {
     class Program
     {
-        //tring numeCompanie = "WebDev";
-        //int numarAngajati = 8;
-        //string tipCompanie = "";
-        //DateTime dataInfiintarii = new DateTime(2010, 2, 20);
-        //string CUI = "J89234832";
-        //string nrTelefon = "0720100500";
-        //string localitate = "Bucuresti";
-        //string tara = "Romania";
-        //bool areTVA = true;
-        //float cifraDeAfaceri = 250250.50F;
-        //float datorii = 0;
-        //float incasari = 120000.85F;
+        static string numeCompanie = "WebDev";
+        static int numarAngajati = 8;
+        static string tipCompanie = "";
+        static DateTime dataInfiintarii = new DateTime(2010, 2, 20);
+        static string CUI = "J89234832";
+        static string nrTelefon = "0720100500";
+        static string localitate = "Bucuresti";
+        static string tara = "Romania";
+        static bool areTVA = true;
+        static double cifraDeAfaceri = 250250.50;
+        static double datorii = -35000.28;
+        static double incasari = 120000.85;
         static string[] listaAngajati = { "Marius", "Sergiu", "Valentina", "Alexandru", "Camelia", "Florentina", "Tiberiu", "Maria" };
         
         static void Main(string[] args)
@@ -53,6 +53,25 @@ namespace TemaLab9
             }
                 
         }
+        static double CalculeazaProfit()
+        {
+            double profit = incasari - datorii;
+            return profit;
+        }
 
-    }
+        static void CalculeazaPierderi()
+        {
+
+        }
+        static void Incaseaza(parametru)
+        {
+
+        }
+        static void Plateste(parametru2)
+        {
+
+        }
+    }   
+    
+        
 }
