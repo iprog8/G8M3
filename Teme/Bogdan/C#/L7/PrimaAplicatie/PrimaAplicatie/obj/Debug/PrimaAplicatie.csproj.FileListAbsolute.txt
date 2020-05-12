@@ -1,0 +1,10 @@
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.exe.config
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.exe
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.pdb
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\Calcule.dll
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\Calcule.pdb
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csprojAssemblyReference.cache
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csproj.CoreCompileInputs.cache
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csproj.CopyComplete
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.exe
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.pdb

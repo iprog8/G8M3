@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Calcule;
 
 namespace PrimaAplicatie
 {
@@ -13,6 +14,9 @@ namespace PrimaAplicatie
             Console.WriteLine("Neata C#!");
             Console.WriteLine("Neata C#!");
             Avion();
+            Adunare aduna = new Adunare();
+            int suma = aduna.Calculeaza(5, 7);
+            Console.WriteLine(suma);
             Console.ReadKey();
         }
 

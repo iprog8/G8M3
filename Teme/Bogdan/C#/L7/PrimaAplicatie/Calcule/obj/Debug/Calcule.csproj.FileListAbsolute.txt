@@ -1,0 +1,6 @@
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\Calcule\bin\Debug\Calcule.dll
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\Calcule\bin\Debug\Calcule.pdb
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\Calcule\obj\Debug\Calcule.csprojAssemblyReference.cache
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\Calcule\obj\Debug\Calcule.csproj.CoreCompileInputs.cache
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\Calcule\obj\Debug\Calcule.dll
+D:\html\G8M3\Teme\Bogdan\C#\L7\PrimaAplicatie\Calcule\obj\Debug\Calcule.pdb
