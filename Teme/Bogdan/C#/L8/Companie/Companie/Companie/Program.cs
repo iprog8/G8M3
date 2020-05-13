@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Companie
 {
@@ -23,17 +20,34 @@ namespace Companie
         static void Main(string[] args)
         {
             Afiseaza();
+            AfiseazaPare();
         }
-       static void Afiseaza()
+        static void Afiseaza()
         {
             List<string> Angajati = new List<string>();
             Angajati.Add("Popescu Ion");
             Angajati.Add("Marcu Alina");
             Angajati.Add("Radu Marius");
-            for (int i= 0; i < Angajati.Count; i++)
+            Console.WriteLine("Angajatii in lista sunt:");
+            for (int i = 0; i < Angajati.Count; i++)
             {
                 Console.WriteLine($"{Angajati[i]}");
             }
         }
+        static void AfiseazaPare()
+        {
+            List<string> Angajati = new List<string>();
+            Angajati.Add("Popescu Ion");
+            Angajati.Add("Marcu Alina");
+            Angajati.Add("Radu Marius");
+            Console.WriteLine("Angajatii pe pozitii pare in lista sunt:");
+            for (int i = 0; i < Angajati.Count; i++)
+            {
+                if (i % 2 == 0)
+                    Console.WriteLine($"{Angajati[i]}");
+            }
+            Console.ReadLine();
+        }
     }
 }
+
