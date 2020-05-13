@@ -13,12 +13,16 @@ namespace Biblioteca
         public int an;
         public int numarPagini;
 
-        public bool  SeUzeaza() //nu stiu sa scriu parametrii booleni 
-        if{
-
-        return true;
-        }
-        else{
+        public bool SeUzeaza(bool areMere)
+        { //nu stiu sa scriu parametrii booleni 
+            if (true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

@@ -15,69 +15,38 @@ namespace TemaL10Operatii
             Console.WriteLine("Alege operatorul pentru a continua: 1.Adunare ; 2.Scadere ; 3.Inmultire ; 4.Impartire");
             ConsoleKeyInfo tastaApasata = Console.ReadKey();
 
+            Console.WriteLine("Introdu primul numar");
+            string primaValoare = Console.ReadLine();
+            Console.WriteLine("Introdu al doilea numar");
+            string aDouaValoare = Console.ReadLine();
+            int primaValoareInt = int.Parse(primaValoare);
+            int aDouaValoareInt = int.Parse(aDouaValoare);
 
             if (tastaApasata.Key == ConsoleKey.D1)
             {
-
-                Console.WriteLine("Introdu primul numar");
-                string primaValoare = Console.ReadLine();
-                Console.WriteLine("Introdu al doilea numar");
-                string aDouaValoare = Console.ReadLine();
-                int primaValoareInt = int.Parse(primaValoare);
-                int aDouaValoareInt = int.Parse(aDouaValoare);
-
                 int suma = Adunare(primaValoareInt, aDouaValoareInt);
                 Console.WriteLine($"Rezultatul adunarii este {suma}");
-                Console.ReadKey();
             }
-            
-
-            if (tastaApasata.Key == ConsoleKey.D2)
+            else if (tastaApasata.Key == ConsoleKey.D2)
             {
-                Console.WriteLine("Introdu primul numar");
-                string primaValoare = Console.ReadLine();
-                Console.WriteLine("Introdu al doilea numar");
-                string aDouaValoare = Console.ReadLine();
-                int primaValoareInt = int.Parse(primaValoare);
-                int aDouaValoareInt = int.Parse(aDouaValoare);
-
-
                 int diferenta = Scadere(primaValoareInt, aDouaValoareInt);
                 Console.WriteLine($"Rezultatul scaderii este {diferenta}");
-                Console.ReadKey();
             }
-
-            if (tastaApasata.Key == ConsoleKey.D3)
+            else if (tastaApasata.Key == ConsoleKey.D3)
             {
-                Console.WriteLine("Introdu primul numar");
-                string primaValoare = Console.ReadLine();
-                Console.WriteLine("Introdu al doilea numar");
-                string aDouaValoare = Console.ReadLine();
-                int primaValoareInt = int.Parse(primaValoare);
-                int aDouaValoareInt = int.Parse(aDouaValoare);
-
                 int produs = Inmultire(primaValoareInt, aDouaValoareInt);
                 Console.WriteLine($"Rezultatul inmultirii este {produs}");
-                Console.ReadKey();
             }
-            if (tastaApasata.Key == ConsoleKey.D4)
+            else if (tastaApasata.Key == ConsoleKey.D4)
             {
-                Console.WriteLine("Introdu primul numar");
-                string primaValoare = Console.ReadLine();
-                Console.WriteLine("Introdu al doilea numar");
-                string aDouaValoare = Console.ReadLine();
-                int primaValoareInt = int.Parse(primaValoare);
-                int aDouaValoareInt = int.Parse(aDouaValoare);
-
                 int cat = Impartire(primaValoareInt, aDouaValoareInt);
                 Console.WriteLine($"Rezultatul impartirii este {cat}");
-                Console.ReadKey();
             }
+            Console.ReadKey();
         }
 
-        static int Adunare(int primaValoare , int aDouaValoare)
+        static int Adunare(int primaValoare, int aDouaValoare)
         {
-
             int rezulttulAdunarii = primaValoare + aDouaValoare;
             return rezultatulAdunarii;
         }
@@ -96,22 +65,8 @@ namespace TemaL10Operatii
 
         static int Impartire(int primaValoare, int aDouaValoare)
         {
-
             int rezulatulImpartirii = primaValoare / aDouaValoare;
             return rezulatulImpartirii;
         }
-
-
-
-
-     
-
-
-
-
-
-
-
     }
-    
 }

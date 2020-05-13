@@ -16,7 +16,7 @@ namespace Biblioteca
         {
             return carte;
         }
-        public bool citeste(bool aCitit)
+        public bool Citeste(bool aCitit)
         {
             return aCitit;
         }
