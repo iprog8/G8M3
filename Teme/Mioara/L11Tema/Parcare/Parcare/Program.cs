@@ -43,7 +43,25 @@ namespace Parcare
             auto3.Numar = "VS-26-ARM";
             auto3.Culoare = "albastru";
 
-            
+            auto1.IntraInParcare(ioana.CuloareArie);
+
+            Console.WriteLine($"{auto1.Marca} intra in locul de parcare {ioana.CuloareArie}  cu nr {ioana.Pozitie} {ioana.LiteraRand}.");
+            Console.ReadKey();
+
+            auto2.IntraInParcare (alexandra.CuloareArie);
+
+            Console.WriteLine($"{auto2.Marca} intra in al doilea loc de parcare {alexandra.CuloareArie} cu nr {alexandra.Pozitie} {alexandra.LiteraRand}.");
+            Console.ReadKey();
+
+            auto3.IntraInParcare(ioana.TipLoc);
+
+            auto1.OcupaLoc(ioana.Pozitie);
+            auto2.OcupaLoc(alexandra.Pozitie);
+            auto3.OcupaLoc(ioana.Pozitie);
+
+
+
+
 
         }
 

@@ -12,20 +12,20 @@ namespace Parcare
         public string Culoare { get; set; }
         public string Tip{ get; set; }
         public string Numar { get; set; }
-        public void IntraInParcare(string auto)
+        public void IntraInParcare( string culoareZona)
         {
 
         }
 
-        public void IeseDinParcare (string auto)
+        public void IeseDinParcare (string culoareZona )
         {
 
         }
-        public void OcupaLoc (string auto)
+        public void OcupaLoc ( int numar)
         {
 
         }
-        public void ElibereazaLoc (string auto)
+        public void ElibereazaLoc (int numar)
         {
 
         }
