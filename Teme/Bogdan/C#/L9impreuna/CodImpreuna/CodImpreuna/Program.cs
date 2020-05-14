@@ -19,9 +19,8 @@ namespace CodImpreuna
                 int aDouaValoareInt = int.Parse(aDouaValoare);
                 int suma = Adunare(primaValoareInt, aDouaValoareInt);
                 Console.WriteLine($"Rezultatul adunarii celor 2 numere este {suma}");
-                Console.ReadKey();
             }
-            if (tastaApasata.Key == ConsoleKey.D2)
+            else if (tastaApasata.Key == ConsoleKey.D2)
             {
                 Console.WriteLine("Ai ales scadere");
                 Console.WriteLine("Introdu primul numar");
@@ -32,9 +31,8 @@ namespace CodImpreuna
                 int aDouaValoareInt = int.Parse(aDouaValoare);
                 int scadere = Scadere(primaValoareInt, aDouaValoareInt);
                 Console.WriteLine($"Rezultatul scaderii celor 2 numere este {scadere}");
-                Console.ReadKey();
             }
-            if (tastaApasata.Key == ConsoleKey.D3)
+            else if (tastaApasata.Key == ConsoleKey.D3)
             {
                 Console.WriteLine("Ai ales inmultire");
                 Console.WriteLine("Introdu primul numar");
@@ -45,9 +43,8 @@ namespace CodImpreuna
                 int aDouaValoareInt = int.Parse(aDouaValoare);
                 int inmultire = Inmultire(primaValoareInt, aDouaValoareInt);
                 Console.WriteLine($"Rezultatul inmultirii celor 2 numere este {inmultire}");
-                Console.ReadKey();
             }
-            if (tastaApasata.Key == ConsoleKey.D4)
+            else if (tastaApasata.Key == ConsoleKey.D4)
             {
                 Console.WriteLine("Ai ales impartire");
                 Console.WriteLine("Introdu primul numar");
@@ -58,8 +55,8 @@ namespace CodImpreuna
                 int aDouaValoareInt = int.Parse(aDouaValoare);
                 int impartire = Impartire(primaValoareInt, aDouaValoareInt);
                 Console.WriteLine($"Rezultatul impartirii celor 2 numere este {impartire}");
-                Console.ReadKey();
             }
+            Console.ReadKey();
         }
         static int Adunare(int primaValoare, int aDouaValoare)
         {

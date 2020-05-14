@@ -10,7 +10,7 @@ namespace Biblioteca
     {
         public string nume;
         public string prenume;
-        public uint dataNasterii;// am incercat sa ii pun datetime ca tip de variabila dar m-am pierdut in formaturi de data si am lasat-o momentan asa.
+        public DateTime dataNasterii;// am incercat sa ii pun datetime ca tip de variabila dar m-am pierdut in formaturi de data si am lasat-o momentan asa.
         public uint codClient;
 
         public void Cumpara(string numeCarte)

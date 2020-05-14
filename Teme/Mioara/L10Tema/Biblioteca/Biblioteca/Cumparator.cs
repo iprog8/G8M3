@@ -14,15 +14,14 @@ namespace Biblioteca
         public int codClient;
 
         public void Citeste(string denumireCarte)
-
         {
-            Console.WriteLine($"Cumparatorul { nume } { prenume} a citit  cartea { denumireCarte}.");
+            Console.WriteLine($"Cumparatorul {nume} {prenume} a citit  cartea {denumireCarte}.");
         }
         public void Cumpara(string denumireCarte)
         {
-           Console.WriteLine($"Cumparatorul { nume} { prenume}a citit  cartea { denumireCarte}.");
+            Console.WriteLine($"Cumparatorul {nume} {prenume} a citit  cartea {denumireCarte}.");
         }
-     
 
-     }
+
+    }
 }
