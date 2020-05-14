@@ -8,24 +8,24 @@ namespace Parcare
 {
     public class Masina
     {
-        public string Marca { get; set; }
+        public string Marca { set; get; }
         public string Culoare { get; set; }
-        public string Tip{ get; set; }
+        public string Tip { get; set; }
         public string Numar { get; set; }
-        public void IntraInParcare( string culoareZona)
+        public void IntraInParcare(string culoareZona)
         {
 
         }
 
-        public void IeseDinParcare (string culoareZona )
+        public void IeseDinParcare(string culoareZona)
         {
 
         }
-        public void OcupaLoc ( int numar)
+        public void OcupaLoc(int numar)
         {
 
         }
-        public void ElibereazaLoc (int numar)
+        public void ElibereazaLoc(int numar)
         {
 
         }
