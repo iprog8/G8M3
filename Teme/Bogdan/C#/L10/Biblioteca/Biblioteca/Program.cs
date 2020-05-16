@@ -42,7 +42,6 @@ namespace Biblioteca
             primaCarte.autor = "Dan Brown";
             primaCarte.numarPagini = 602;
 
-            Carte carte = primaCarte;
             Carte primaCarteCumparata = primulCumparator.Cumpara(primaCarte.nume);
             primulCumparator.Citeste(primaCarte.nume);
 
