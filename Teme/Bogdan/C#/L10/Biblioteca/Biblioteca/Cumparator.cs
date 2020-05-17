@@ -9,26 +9,29 @@ namespace Biblioteca
         public DateTime dataNasterii;
         public string codClient;
 
-        public void Cumpara(Carte carte)
+        public bool Cumpara(Carte carte)
         {
             if (carte == null)
             {
                 Console.WriteLine($"Clientul nu a cumparat nicio carte");
+                return false;
             }
             else
             {
-                Console.WriteLine($"Clientul a cumparat cartea {carte}");
+                return true;
             }
         }
+
         public bool Citeste(Carte carte)
         {
             if (carte != null)
             {
-                Console.WriteLine($"Clientul {nume} {prenume} a cumparat cartea {carte}. S-a apucat de citit? /n 1. Da /n 2.Nu");
+                Console.WriteLine("S-a apucat de citit?\r\n1.Da\r\n2.Nu");
                 ConsoleKeyInfo tastaApasata = Console.ReadKey();
                 if (tastaApasata.Key == ConsoleKey.D1)
                 {
                     Console.WriteLine("Ne bucuram ca te-am ajutat sa gasesti o carte pe gustul tau !");
+                    Console.WriteLine("In timp cartea se va uza, dar placerea cititului va ramane nemuritoare!");
                     return true;
                 }
                 else

@@ -8,9 +8,9 @@ namespace Biblioteca
         public string autor;
         public uint an;
         public ushort numarPagini;
-        public bool seUzeaza(string codCLient)
+        public bool seUzeaza(Carte carte)
         {
-            Console.WriteLine($"Cumparatorul {codCLient} citeste {nume} scrisa de {autor}");
+            Console.WriteLine("In timp cartea se va uza, dar placerea cititului va ramane nemuritoare!");
             return true;
         }
     }

@@ -2,7 +2,7 @@
 
 namespace Biblioteca
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -31,25 +31,31 @@ namespace Biblioteca
             primaCarte.numarPagini = 344;
 
             Carte aDouaCarte = new Carte();
-            primaCarte.nume = "Ferma animalelor";
-            primaCarte.an = 1945;
-            primaCarte.autor = "George Orwell";
-            primaCarte.numarPagini = 208;
+            aDouaCarte.nume = "Ferma animalelor";
+            aDouaCarte.an = 1945;
+            aDouaCarte.autor = "George Orwell";
+            aDouaCarte.numarPagini = 208;
 
             Carte aTreiaCarte = new Carte();
-            primaCarte.nume = "Simbolul Pierdut";
-            primaCarte.an = 2009;
-            primaCarte.autor = "Dan Brown";
-            primaCarte.numarPagini = 602;
-            
-            Carte primaCarteCumparata = primulCumparator.Cumpara(primaCarte.nume);
-            primulCumparator.Citeste(primaCarte.nume);
+            aTreiaCarte.nume = "Simbolul Pierdut";
+            aTreiaCarte.an = 2009;
+            aTreiaCarte.autor = "Dan Brown";
+            aTreiaCarte.numarPagini = 602;
+
+            primulCumparator.Cumpara(primaCarte);
+            Console.WriteLine($"{primulCumparator.nume} {primulCumparator.prenume} a cumparat cartea cu titlul {primaCarte.nume}");
+            primulCumparator.Citeste(primaCarte);
+            Console.WriteLine("\r\n");
 
             alDoileaCumparator.Cumpara(aTreiaCarte);
+            Console.WriteLine($"{alDoileaCumparator.nume} {alDoileaCumparator.prenume} a cumparat cartea cu titlul {aTreiaCarte.nume}");
             alDoileaCumparator.Citeste(aTreiaCarte);
+            Console.WriteLine("\r\n");
 
             alTreileaCumparator.Cumpara(aDouaCarte);
+            Console.WriteLine($"{alTreileaCumparator.nume} {alTreileaCumparator.prenume} a cumparat cartea cu titlul {aDouaCarte.nume}");
             alTreileaCumparator.Citeste(aDouaCarte);
+            Console.WriteLine("\r\n");
 
             Console.ReadKey();
         }
