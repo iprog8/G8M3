@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//Masinile Dacia si Suzuki trebuie sa iasa din parcare 
+/*Masinile Dacia si Suzuki trebuie sa iasa din parcare 
+*/
 
 namespace Parcare
 {
