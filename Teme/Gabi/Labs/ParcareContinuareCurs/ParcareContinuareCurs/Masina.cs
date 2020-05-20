@@ -18,12 +18,12 @@ namespace ParcareContinuareCurs
         }
        public bool OcupaLocParcare(LocParcare loculParcare)
         {
-            if (loculParcare.CuloareArie == null) return false;
-            else
+            if (loculParcare != null)
             {
                 loculParcare.OcupatDeMasina = this;
                 return true;
-            }          
+            }
+            else return false;        
         }
         public bool ElibereazaLocParcare(LocParcare locParcare)
         {
@@ -43,7 +43,7 @@ namespace ParcareContinuareCurs
             }
             else
             {
-                Console.WriteLine($"Locul de parcare{locParcare.LiteraRand}{locParcare.Pozitie} este deja liber");
+                Console.WriteLine($"Locul de parcare{locParcare.LiteraRand}{locParcare.Pozitie} este deja liber si poti parca");
                 return true;
             }
         }
@@ -51,6 +51,5 @@ namespace ParcareContinuareCurs
         {
             Console.WriteLine($"Masina cu numarul {Numar} iese din parcare");
         }
-        //my code ends here
     }
 }

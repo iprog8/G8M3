@@ -11,7 +11,6 @@ namespace ParcareContinuareCurs
         static void Main(string[] args)
         {
             List<LocParcare> locuriParcare = new List<LocParcare>();
-
             LocParcare loc1 = new LocParcare() { CuloareArie = "Rosu" , LiteraRand = "A", Pozitie = 1, TipLoc = TipMasina.Autoturism };
             locuriParcare.Add(loc1);
 
@@ -20,7 +19,7 @@ namespace ParcareContinuareCurs
             LocParcare loc3 = new LocParcare() { CuloareArie = "Rosu", LiteraRand = "A", Pozitie = 3, TipLoc = TipMasina.Autoturism };
             locuriParcare.Add(loc3);
 
-            Masina dacia = new Masina(){ Culoare = "Gri",Marca = "Dacia", Numar = "B123ZZZ",Tip = TipMasina.Autoturism };
+            Masina dacia = new Masina(){ Culoare = "Gri",Marca = "Dacia", Numar = "B123ZZZ",Tip = TipMasina.Camion };
             Masina opel = new Masina() { Culoare = "Rosu", Marca = "Opel", Numar = "C123BNX", Tip = TipMasina.Autoturism };
             Masina logan = new Masina() { Culoare = "Maro", Marca = "Logan", Numar = "D645NNN", Tip = TipMasina.Autoturism };
             Masina ford = new Masina() { Culoare = "Alb", Marca = "Ford", Numar = "B321AAA", Tip = TipMasina.Autoturism };
@@ -44,11 +43,6 @@ namespace ParcareContinuareCurs
             if (logan.OcupaLocParcare(locParcareLiber3))
             {
                 Console.WriteLine($"Masina cu numarul {logan.Numar} a parcat pe locul de parcare {locParcareLiber3.LiteraRand}{locParcareLiber3.Pozitie}");
-            } 
-            
-            if(opel.ElibereazaLocParcare(loc1))
-            {
-                opel.IeseDinParcare();
             }
 
             ford.IntraInParcare();
@@ -58,6 +52,10 @@ namespace ParcareContinuareCurs
                 Console.WriteLine($"Masina cu numarul {ford.Numar} a parcat pe locul de parcare {locParcareLiber4.LiteraRand}{locParcareLiber4.Pozitie}");
             }
 
+            if (opel.ElibereazaLocParcare(loc1))
+            {
+                opel.IeseDinParcare();
+            }
             Console.ReadKey();
         }
       

@@ -22,17 +22,14 @@ namespace ParcareContinuareCurs
                     Console.WriteLine("S-a gasit loc de parcare liber, se verifica compatibilitatea...");
                     if(locParcare[i].TipLoc == masina.Tip)
                     {
-                        Console.WriteLine("S-a gasit un loc de parcare gol compatibil cu tipul masinii...");
+                        Console.WriteLine("S-a gasit un loc de parcare gol compatibil cu tipul masinii tale...");
                         return locParcare[i];
                     }
-                    else
-                    {
-                        Console.WriteLine("Nu s-a gasit un loc de parcare compatibil cu tipul masinii tale");
-                    }
+                    else Console.WriteLine("Nu s-a gasit un loc de parcare compatibil cu tipul masinii tale");
                 } 
             }
-            Console.WriteLine("Nu s-au gasit locuri libere de parcare");
-            return new LocParcare();
+            Console.WriteLine($"Nu s-au gasit locuri libere de parcare pentru masina cu numarul {masina.Numar}");
+            return null;
         }
     }
 }
