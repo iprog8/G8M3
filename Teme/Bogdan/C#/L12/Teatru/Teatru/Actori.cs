@@ -2,8 +2,9 @@
 
 namespace Teatru
 {
-    class Actori
+    public class Actor
     {
-        public List<string> ListaActori { get; set; }
+        public string Nume { get; set; }
+        public string PreNume { get; set; }
     }
 }

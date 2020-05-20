@@ -1,50 +1,24 @@
-﻿namespace Teatru
+﻿using System.Collections.Generic;
+
+namespace Teatru
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Piesa LaTiganci = new Piesa();
-            LaTiganci.Titlu = "La țigănci";
-            LaTiganci.Regizor = "Andrei și Andreea Grosu";
+            Piesa laTiganci = new Piesa();
+            laTiganci.Titlu = "La țigănci";
+            laTiganci.Regizor = "Andrei și Andreea Grosu";
+            laTiganci.LocuriDisponibile = 20;
+            laTiganci.TaxaDeAcces = 27.50;
 
-            /*List<Piesa> ListaActori  = new List<Piesa>();
-            Piesa RichardBovnoczki = new Piesa();
-            ListaActori.Add(RichardBovnoczki);
-            Piesa LiviuPintileasa = new Piesa();
-            ListaActori.Add(LiviuPintileasa);
-            Piesa MihaelaTrofimov = new Piesa();
-            ListaActori.Add(MihaelaTrofimov);
-            Piesa FlorentinaTilea = new Piesa();
-            ListaActori.Add(FlorentinaTilea);
-            Piesa FlorinaGleznea = new Piesa();
-            ListaActori.Add(FlorinaGleznea);
-            Piesa CristinaCasian = new Piesa();
-            ListaActori.Add(CristinaCasian);
-            Piesa BogdanCotlet = new Piesa();
-            ListaActori.Add(BogdanCotlet);
+            int bileteGenerate = laTiganci.GenereazaBilete(20);
 
-            void actoriiDinPiesa(List<Piesa> actoriPiesa)
-            {
-                foreach (object Piesa in ListaActori)
-                {
-                    Console.WriteLine(ListaActori);
-                }
-            }
-
-            actoriiDinPiesa(ListaActori);
-            Console.ReadLine();*/
-
-            LaTiganci.LocuriDisponibile = 20;
-            LaTiganci.LocuriDisponibile = LaTiganci.Bilete;
-            LaTiganci.TaxaDeAcces = 27.50;
-
-
-            Bilet BiletIntrare = new Bilet();
-            BiletIntrare.Piesa = "La țigănci";
-            BiletIntrare.Loc = LaTiganci.Bilete;
-            BiletIntrare.PretBilet = LaTiganci.TaxaDeAcces;
-            BiletIntrare.Vandut = false;
+            List<Bilet> bileteAchizitionate =  laTiganci.VindeBielte(40);
+            bileteAchizitionate = laTiganci.VindeBielte(10);
+            bileteAchizitionate = laTiganci.VindeBielte(5);
+            bileteAchizitionate = laTiganci.VindeBielte(3);
+            bileteAchizitionate = laTiganci.VindeBielte(5);
 
         }
     }

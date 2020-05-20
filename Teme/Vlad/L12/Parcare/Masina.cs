@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /*Clasa Masina sa aiba urmatoarele proprietati(cu get si set ca la ultimul curs): Marca, Culoare, 
-Tip(Camion, Autocar, Microbus, Automobil), Numar iar ca functii: IntraInParcare, IeseDinParcare, OcupaLoc, ElibereazaLoc; |*/
+Tip(Camion, Autocar, Microbus, Automobil), Numar iar ca functii: IntraInParcare, IeseDinParcare, 
+OcupaLoc, ElibereazaLoc; |*/
 
 namespace Parcare
 {
@@ -26,23 +27,23 @@ namespace Parcare
 
         }
         public bool OcupaLoc() { return true; }
-       /* public bool OcupaLoc(LocParcare locParcare)
-        {
-            if(locParcare.OcupatDeMasina == null)
-            {
-                Console.WriteLine($"Locul de parcare {locParcare.LiteraRand}, {locParcare.Pozitie} este liber");
-                locParcare.OcupatDeMasina = this;
-                Console.WriteLine($"Masina {NumarInmatriculare} a fost parcata ");
-                return true;
-            }
-            else
-            {
-                Console.WriteLine($"Locul de parcare {locParcare.LiteraRand}, {locParcare.Pozitie} este ocupat");
-                return false;
-            }
-        }*/
+        /* public bool OcupaLoc(LocParcare locParcare)
+         {
+             if(locParcare.OcupatDeMasina == null)
+             {
+                 Console.WriteLine($"Locul de parcare {locParcare.LiteraRand}, {locParcare.Pozitie} este liber");
+                 locParcare.OcupatDeMasina = this;
+                 Console.WriteLine($"Masina {NumarInmatriculare} a fost parcata ");
+                 return true;
+             }
+             else
+             {
+                 Console.WriteLine($"Locul de parcare {locParcare.LiteraRand}, {locParcare.Pozitie} este ocupat");
+                 return false;
+             }
+         }*/
     }
 
- 
+
 
 }

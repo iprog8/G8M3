@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-/*clasa LocParcare sa aiba urmatoarele proprietati: CuloareArie, LiteraRand, Pozitie, TipLoc(Camion, Autocar, Microbus, Automobil), OcupatDeMasina;*/
+/*clasa LocParcare sa aiba urmatoarele proprietati: CuloareArie, LiteraRand, Pozitie, 
+TipLoc(Camion, Autocar, Microbus, Automobil), OcupatDeMasina;*/
 
 namespace Parcare
 {
@@ -17,4 +18,3 @@ namespace Parcare
         public Masina OcupatDeMasina { get; set; }
     }
 }
- 

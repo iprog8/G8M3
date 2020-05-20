@@ -13,15 +13,15 @@ namespace Parcare
     {
         static void Main(string[] args)
         {
-      
+
             List<Masina> ListaMasini = new List<Masina>();
-            ListaMasini.Add(new Masina {Marca = "Audi", Tip = "Automobil" });
-            ListaMasini.Add(new Masina {Marca = "Mercedes", Tip = "Autocar" });
-            ListaMasini.Add(new Masina {Marca = "Iveco", Tip = "Camion" });
-            ListaMasini.Add(new Masina {Marca = "Opel", Tip = "Automobil" });
-            ListaMasini.Add(new Masina {Marca = "Dacia", Tip = "Automobil" });
-            ListaMasini.Add(new Masina {Marca = "Honda", Tip = "Autocar" });
-            ListaMasini.Add(new Masina {Marca = "Mitsubishi", Tip = "Microbus" });
+            ListaMasini.Add(new Masina { Marca = "Audi", Tip = "Automobil" });
+            ListaMasini.Add(new Masina { Marca = "Mercedes", Tip = "Autocar" });
+            ListaMasini.Add(new Masina { Marca = "Iveco", Tip = "Camion" });
+            ListaMasini.Add(new Masina { Marca = "Opel", Tip = "Automobil" });
+            ListaMasini.Add(new Masina { Marca = "Dacia", Tip = "Automobil" });
+            ListaMasini.Add(new Masina { Marca = "Honda", Tip = "Autocar" });
+            ListaMasini.Add(new Masina { Marca = "Mitsubishi", Tip = "Microbus" });
             ListaMasini.Add(new Masina { Marca = "Suzuki", Tip = "Autocar" });
 
 
@@ -32,13 +32,17 @@ namespace Parcare
             ListaLocuriP.Add(new LocParcare { CuloareArie = "Galbena", LiteraRand = "B", Pozitie = 1, TipLoc = "Automobil" });
             ListaLocuriP.Add(new LocParcare { CuloareArie = "Galbena", LiteraRand = "B", Pozitie = 2, TipLoc = "Microbus" });
             ListaLocuriP.Add(new LocParcare { CuloareArie = "Galbena", LiteraRand = "B", Pozitie = 3, TipLoc = "Autocar" });
+            AseazaMasinileInParcare(ListaMasini, ListaLocuriP);
+            Console.ReadKey();
+        }
 
- 
+        private static void AseazaMasinileInParcare(List<Masina> ListaMasini, List<LocParcare> ListaLocuriP)
+        {
             int i, j;
             for (i = 0; i < ListaMasini.Count; i++)
             {
                 ListaMasini[i].IntraInParcare();
-                for(j=0; j < ListaLocuriP.Count; j++)
+                for (j = 0; j < ListaLocuriP.Count; j++)
                 {
                     if (ListaLocuriP[j].OcupatDeMasina != null)
                     {
@@ -57,15 +61,13 @@ namespace Parcare
                             Console.WriteLine($"{ListaMasini[i].Tip}ul {ListaMasini[i].Marca} a ocupat locul {ListaLocuriP[j].LiteraRand}{ListaLocuriP[j].Pozitie} de tipul {ListaLocuriP[j].TipLoc} ");
                             break;
                         }
-                    } 
-                    if (j == 5)  
+                    }
+                    if (j == 5)
                     {
                         ListaMasini[i].IeseDinParcare();
                     }
-                } 
+                }
             }
-            Console.ReadKey();
         }
     }
 }
-   
