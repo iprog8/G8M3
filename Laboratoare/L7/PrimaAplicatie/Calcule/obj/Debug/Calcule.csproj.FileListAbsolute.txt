@@ -1,6 +1,0 @@
-D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\Calcule\bin\Debug\Calcule.dll
-D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\Calcule\bin\Debug\Calcule.pdb
-D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\Calcule\obj\Debug\Calcule.csprojAssemblyReference.cache
-D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\Calcule\obj\Debug\Calcule.csproj.CoreCompileInputs.cache
-D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\Calcule\obj\Debug\Calcule.dll
-D:\DEV\G8M3\Laboratoare\L7\PrimaAplicatie\Calcule\obj\Debug\Calcule.pdb
