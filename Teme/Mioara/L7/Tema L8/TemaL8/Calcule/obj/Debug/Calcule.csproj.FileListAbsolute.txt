@@ -1,6 +1,0 @@
-C:\MODUL 3\G8m3\Teme\Mioara\L7\Tema L8\TemaL8\Calcule\bin\Debug\Calcule.dll
-C:\MODUL 3\G8m3\Teme\Mioara\L7\Tema L8\TemaL8\Calcule\bin\Debug\Calcule.pdb
-C:\MODUL 3\G8m3\Teme\Mioara\L7\Tema L8\TemaL8\Calcule\obj\Debug\Calcule.csprojAssemblyReference.cache
-C:\MODUL 3\G8m3\Teme\Mioara\L7\Tema L8\TemaL8\Calcule\obj\Debug\Calcule.csproj.CoreCompileInputs.cache
-C:\MODUL 3\G8m3\Teme\Mioara\L7\Tema L8\TemaL8\Calcule\obj\Debug\Calcule.dll
-C:\MODUL 3\G8m3\Teme\Mioara\L7\Tema L8\TemaL8\Calcule\obj\Debug\Calcule.pdb
