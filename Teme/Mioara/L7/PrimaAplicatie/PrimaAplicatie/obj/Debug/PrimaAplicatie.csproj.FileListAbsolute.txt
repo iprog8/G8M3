@@ -1,7 +1,0 @@
-C:\MODUL 3\G8m3\Teme\Mioara\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csprojAssemblyReference.cache
-C:\MODUL 3\G8m3\Teme\Mioara\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csproj.CoreCompileInputs.cache
-C:\MODUL 3\G8m3\Teme\Mioara\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.exe.config
-C:\MODUL 3\G8m3\Teme\Mioara\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.exe
-C:\MODUL 3\G8m3\Teme\Mioara\L7\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.pdb
-C:\MODUL 3\G8m3\Teme\Mioara\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.exe
-C:\MODUL 3\G8m3\Teme\Mioara\L7\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.pdb

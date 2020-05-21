@@ -1,7 +1,0 @@
-D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L7\Lab\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.exe.config
-D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L7\Lab\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.exe
-D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L7\Lab\PrimaAplicatie\PrimaAplicatie\bin\Debug\PrimaAplicatie.pdb
-D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L7\Lab\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csprojAssemblyReference.cache
-D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L7\Lab\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.csproj.CoreCompileInputs.cache
-D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L7\Lab\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.exe
-D:\Vlad\MPDUL3_REMOTE_REPO\G8M3-master\G8M3\Teme\Vlad\L7\Lab\PrimaAplicatie\PrimaAplicatie\obj\Debug\PrimaAplicatie.pdb
