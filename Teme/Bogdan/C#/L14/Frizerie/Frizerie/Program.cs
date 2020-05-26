@@ -68,12 +68,12 @@ namespace Frizerie
 
             bool Schimb(Frizer schimb)
             {
-                if (Frizerie.timp < 540) &(Frizerie.timp > 1200)
+                if ((Frizerie.timp < 540) && (Frizerie.timp > 1200))
                 {
                     Console.WriteLine($"Frizeria {frizerie.Nume} este inchisa, va rugam sa consultati programul.");
                     return false;
                 }
-                else if (Frizerie.timp >= 540) &(Frizerie.timp <= 1200)
+                else if ((Frizerie.timp >= 540) && (Frizerie.timp <= 1200))
                 {
                     if (Frizerie.timp < 1020)
                     {
