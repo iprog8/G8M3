@@ -13,13 +13,11 @@ namespace Frizerie
             Nume = "Popescu Ion";
             Sex = Sex.Masculin;
             AniExperienta = 1;
-            Talent = true;
         }
-        string Nume { get; set; }
-        Sex Sex { get; set; }
-        uint AniExperienta { get; set; }
-        bool Talent { get; set; }
-        List<Programare> Programari { get; set; }
+        public string Nume { get; set; }
+        public Sex Sex { get; set; }
+        public uint AniExperienta { get; set; }
+        public List<Programare> Programari { get; set; }
         public void TundeClienti()
         {
 

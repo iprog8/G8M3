@@ -8,8 +8,8 @@ namespace Frizerie
 {
     public class Client
     {
-        string Nume { get; set; }
-        Programare Programare { get; set; }
+        public string Nume { get; set; }
+        public Programare Programare { get; set; }
         public void FaceProgramare()
         {
 

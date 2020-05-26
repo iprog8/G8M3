@@ -12,9 +12,9 @@ namespace Frizerie
         {
             TimpPentruTuns = 30;
         }
-        uint TimpPentruTuns { get; set; } //In minute
-        Client Client { get; set; }
-        DateTime DataProgramarii { get; set; }
-        Frizer Frizer { get; set; }
+        public uint TimpPentruTuns { get; set; } //In minute
+        public  Client Client { get; set; }
+        public DateTime DataProgramarii { get; set; }
+        public Frizer Frizer { get; set; }
     }
 }

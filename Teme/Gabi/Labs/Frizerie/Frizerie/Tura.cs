@@ -12,7 +12,7 @@ namespace Frizerie
         {
             TimpTura = 120;
         }
-        uint TimpTura { get; set; } //in minute
-        List<Frizer> Frizeri { get; set; }
+        public uint TimpTura { get; set; } //in minute
+        public List<Frizer> Frizeri { get; set; }
     }
 }
