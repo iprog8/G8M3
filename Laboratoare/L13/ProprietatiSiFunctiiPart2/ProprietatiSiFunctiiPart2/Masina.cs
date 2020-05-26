@@ -10,9 +10,23 @@ namespace ProprietatiSiFunctiiPart2
     {
         public Masina()
         {
+            Init("Dacia", "Alb");
+        }
+
+        public Masina(string marca)
+        {
+            Init(marca, "Alb");
+        }
+        public Masina(string marca, string culoarea)
+        {
+            Init(marca, culoarea);
+        }
+
+        private void Init(string marca, string culoarea)
+        {
             AmCreatOMasina();
-            Culoare = "Alb";
-            Marca = "Dacia";
+            Culoare = culoarea;
+            Marca = marca;
             KmBord = 550;
         }
 
@@ -36,6 +50,13 @@ namespace ProprietatiSiFunctiiPart2
         {
             NumarMasini++;
             Console.WriteLine($"Avem {NumarMasini} de masini create");
+        }
+
+        //Destructor
+        ~Masina()
+        {
+            //dsitruge obiectul
+
         }
     }
 }
