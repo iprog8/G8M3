@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Frizerie
 {
-    public class Tura
+    public class Frizerie
     {
-        public Tura()
+        public Frizerie()
         {
-            TimpTura = 480;
+            Nume = "FrizeriaMea";
         }
-        public uint TimpTura { get; set; } //in minute
+        public string Nume { get; set; }
+        public List<Client> Clienti { get; set; }
         public List<Frizer> Frizeri { get; set; }
+        public Tura Tura { get; set; }
     }
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Frizer.cs" />
+    <Compile Include="Frizerie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Programare.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

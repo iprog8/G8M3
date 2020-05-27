@@ -8,9 +8,12 @@ namespace Frizerie
 {
     public class Programare
     {
-        Programare()
+        public Programare(Client client, DateTime data,Frizer frizer)
         {
             TimpPentruTuns = 30;
+            Client = client;
+            DataProgramarii = (data < DateTime.Now) ? DateTime.Today : data;
+            Frizer = frizer;
         }
         public uint TimpPentruTuns { get; set; } //In minute
         public  Client Client { get; set; }
