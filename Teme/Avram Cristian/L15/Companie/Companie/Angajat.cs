@@ -7,15 +7,29 @@ using System.Threading.Tasks;
 
 namespace Companie
 {
-    public class Angajat
+    public class Angajat: object
     {
-        internal protected string Nume { get;  set; }
-        public Sex Sex { get;  set; }
-        internal protected double Salariu { get;  protected set; }
-        private string PinCard { get; set; }
+        internal protected string Nume { get; set; }
+        public Sex Sex { get; set; }
+        protected double Salariu { get; set; }
+        protected string PinCard { get; set; }
         internal protected Departament Departament { get; internal set; }
 
-       
+        internal double AflaSalariu(Contabil contabil)
+        {
+            return Salariu;
+        }
+
+        internal double AflaSalariu(Angajat angajat)
+        {
+            if (angajat is Contabil || angajat is ContabilSef)
+            {
+                return Salariu;
+            }
+            //throw new Exception("Nu poti sa vezi salariul acestei persoane");
+            return 0;
+        }
+
         public void IntraInFirma()
         {
             Console.WriteLine($"Angajatul {Nume} intra in firma.");
@@ -53,6 +67,6 @@ namespace Companie
         Executii,
         Vanzari,
         ContabilitateHR,
-        
+
     }
 }

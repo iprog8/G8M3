@@ -23,6 +23,10 @@ namespace Companie
             contabilSef.Munceste();
             contabilSef.ExecutaBalanta("februarie2020");//Executa metoda din clasa mostenita.
             contabilSef.ExecutaBilant(2019);
+            contabilSef.GetType();
+            contabilSef.ToString();
+            contabilSef.GetHashCode();
+
 
             Muncitor muncitor1 = new Muncitor();
             muncitor1.Nume = "Virgil Vasilescu";

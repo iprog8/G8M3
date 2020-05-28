@@ -2,11 +2,11 @@
 {
     public enum ZileLibereLegale
     {
-        Ianuarie,
-        Aprilie,
-        Mai,
-        Iunie,
-        August,
+        Ianuarie1,
+        Ianuarie2,
+        Ianuarie24,
+        Paste1,
+        Paste2,
         Noiembrie,
         Decembrie
     }
