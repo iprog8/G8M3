@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Companie
 {
@@ -11,7 +8,7 @@ namespace Companie
         protected internal List<Muncitor> Subalterni { get; set; }
         protected bool AprobConcediu(Muncitor zileConcediu)
         {
-            if(zileConcediu != null)
+            if (zileConcediu != null)
             {
                 Console.WriteLine($"Se aproba concediul pentru {zileConcediu.Nume} {zileConcediu.Prenume}.");
                 return true;

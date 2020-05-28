@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Companie
 {
@@ -19,7 +16,7 @@ namespace Companie
         {
             Console.WriteLine($"Muncitorului {muncitor.Nume} {muncitor.Prenume} i se termina contractul de munca. I-l prelungim? 1.Da  2.Nu");
             ConsoleKeyInfo tastaApasata = Console.ReadKey();
-            if(tastaApasata.Key == ConsoleKey.D1 )
+            if (tastaApasata.Key == ConsoleKey.D1)
             {
                 Console.WriteLine($"Muncitorului {muncitor.Nume} {muncitor.Prenume} i s-a prelungit contractul");
                 return true;
