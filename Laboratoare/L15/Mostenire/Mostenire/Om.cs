@@ -8,6 +8,7 @@ namespace Mostenire
 {
     public class Om
     {
+        private string Pin { get; set; }
         public string Nume { get; set; }
         public DateTime DataNastere { get; set; }
 
