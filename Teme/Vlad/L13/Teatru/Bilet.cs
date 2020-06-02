@@ -13,6 +13,10 @@ namespace Teatru
 {
     public class Bilet
     {
+        public Bilet()
+        {
+            Vandut = false;
+        }
         public Piesa Piesa { get; set; }
         public int Loc { get; set; }
         public int PretBilet { get; set; }
