@@ -10,9 +10,9 @@ namespace Companie
     {
         static void Main(string[] args)
         {
-            Contabil contabil1 = new Contabil();
-            contabil1.Sex = Sex.F;
-            contabil1.Nume = "Alina Dumitrescu";
+            Contabil contabil1 = new Contabil("Alina Dumitrescu", Sex.F);
+            //contabil1.Sex = Sex.F;
+            //contabil1.Nume = "Alina Dumitrescu";
             contabil1.Munceste();
             contabil1.ExecutaBalanta("ianuarie2020");
             //contabil1.ExecutaBilant(2019); Metoda nu poate fi accesata deoarece implica o proprietate "private"

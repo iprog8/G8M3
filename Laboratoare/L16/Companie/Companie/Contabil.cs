@@ -15,6 +15,13 @@ namespace Companie
             Balanta = "luna mai";
             Salariu = 1999;
         }
+
+        public Contabil(string nume, Sex sex)
+        {
+            Nume = nume;
+            Sex = sex;
+            Salariu = 1999;
+        }
         public string ProgramLucru { get; set; }
         protected string Balanta { get; set; }
 
