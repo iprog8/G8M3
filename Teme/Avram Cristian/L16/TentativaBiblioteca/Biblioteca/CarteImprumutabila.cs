@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    public class CarteImprumutabila: Carte
+    public class CarteImprumutabila : Carte
     {
-        public CarteImprumutabila(string titlu, string autor)
-            :base(titlu, autor)
+        public CarteImprumutabila(string titlu, string autor, bool bauBau)
+            : base(titlu, autor)
         {
-           
+
         }
 
-        
-        
+
+
 
     }
 }

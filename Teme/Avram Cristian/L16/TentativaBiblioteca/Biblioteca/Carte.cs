@@ -15,8 +15,8 @@ namespace Biblioteca
             Autor = autor;
         }
 
-        public string Titlu { get; set; }
-        public string Autor { get; set; }
+        public string Titlu { get; protected set; }
+        public string Autor { get; protected set; }
         public bool SePoateImprumuta = true;
         public int nivelUzura { get; set; }
 
@@ -27,7 +27,7 @@ namespace Biblioteca
             Console.WriteLine($"Cartea cu titlul {Titlu}, scrisa de catre {Autor} se uzeaza.");
             Console.WriteLine($"Cartea cu titlul {Titlu}, scrisa de catre {Autor} are nivelul de uzura {nivelUzura}.");
 
-            return  nivelUzura;
+            return nivelUzura;
         }
 
     }

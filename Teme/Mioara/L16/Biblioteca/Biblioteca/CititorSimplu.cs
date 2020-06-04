@@ -12,16 +12,15 @@ namespace Biblioteca
         public CititorSimplu()
         {
             Nume = "Ion Aurescu";
-            
-
+            CartiImprumutate = new List<CarteImprumutabila>();
         }
 
         protected internal string Nume { get; set; }
-        
-        protected internal List<CarteImprumutabila> CartiImprumutate {get; set; }
+
+        protected internal List<CarteImprumutabila> CartiImprumutate { get; set; }
         public void ImprumutaCarte(CarteImprumutabila carteImprumutata)
         {
-            
+
         }
 
 

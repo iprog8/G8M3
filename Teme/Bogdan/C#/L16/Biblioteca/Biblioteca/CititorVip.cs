@@ -8,12 +8,9 @@ namespace Biblioteca
 {
     class CititorVip : CititorSimplu
     {
-        public CititorVip(string _nume, string _prenume, ushort _membership, ushort _cartiImprumutate) : base (_nume, _prenume, _membership, _cartiImprumutate)
+        public CititorVip(string _nume, string _prenume, ushort _membership, ushort _cartiImprumutate) :
+            base(_nume, _prenume, _membership, _cartiImprumutate)
         {
-            Nume = _nume;
-            Prenume = _prenume;
-            Membership = _membership;
-            CartiImprumutate = _cartiImprumutate;
         }
         protected internal ushort UpgradeMembership(CititorSimplu cititor)
         {

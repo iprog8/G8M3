@@ -12,16 +12,6 @@ namespace Biblioteca
     string _categorie, string _sectiune, string _editura, bool _imprumutabila) : base(_titlu, _autor, _nrPagini, _anAparitie, _totalExemplare,
         /*_exemplareInBiblioteca,*/ _categorie, _sectiune, _editura, _imprumutabila)
         {
-            TitluCarte = _titlu;
-            Autor = _autor;
-            NumarPagini = _nrPagini;
-            AnAparitie = _anAparitie;
-            TotalExemplare = _totalExemplare;
-            //CartiDisponibile = _exemplareInBiblioteca;
-            Categorie = _categorie;
-            Sectiune = _sectiune;
-            Editura = _editura;
-            Imprumutabila = _imprumutabila;
         }
         public List<CarteNeimprumutabila> CartiImprumutate { get; set; }
         public List<CarteNeimprumutabila> CartiCititeInBiblioteca { get; set; }
