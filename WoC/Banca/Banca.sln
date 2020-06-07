@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BazaDate", "BazaDate\BazaDa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicaBanca", "LogicaBanca\LogicaBanca.csproj", "{AB43A6B8-FE8A-4E53-8FA0-C1F689FD262F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banca", "Banca\Banca.csproj", "{1E7CE64C-BCDF-440C-B1D2-CEC48FEF45F1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{AB43A6B8-FE8A-4E53-8FA0-C1F689FD262F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB43A6B8-FE8A-4E53-8FA0-C1F689FD262F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB43A6B8-FE8A-4E53-8FA0-C1F689FD262F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E7CE64C-BCDF-440C-B1D2-CEC48FEF45F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E7CE64C-BCDF-440C-B1D2-CEC48FEF45F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E7CE64C-BCDF-440C-B1D2-CEC48FEF45F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E7CE64C-BCDF-440C-B1D2-CEC48FEF45F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
