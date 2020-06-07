@@ -68,7 +68,7 @@ namespace LogicaBanca
 
         public bool SchimbaParola(string parolaVeche, string parolaNoua)
         {
-            if (Parola == parolaVeche)
+            if (Parola == parolaVeche && parolaNoua != parolaVeche)
             {
                 Parola = parolaNoua;
                 return true;
@@ -76,9 +76,55 @@ namespace LogicaBanca
             return false;
         }
 
-        public bool Transfera(string cont, int suma)
+        public RaspunsComplex TransferaLocal(int sumaDeTransferat, ContBancar contDestinatar)
         {
-            return true;
+            string message = string.Empty;
+            if (sumaDeTransferat > 0)
+            {
+                if (Sold >= sumaDeTransferat)
+                {
+                    Sold -= sumaDeTransferat;
+                    contDestinatar.Sold += sumaDeTransferat;
+
+                    message = $"In contul {contDestinatar.CodBancar} a fost transferata suma de {sumaDeTransferat} din contul {CodBancar}";
+                    return new RaspunsComplex(true, message);
+                }
+                else
+                {
+                    message = $"Suma transferata este mai mare decat soldul contului.";
+                    return new RaspunsComplex(false, message);
+                }
+            }
+            else
+            {
+                message = $"Suma transferata nu poate fi negativa.";
+                return new RaspunsComplex(false, message);
+            }
+
+
+        }
+        public Tranzactie TransferaInterbancar( int suma, string iban)
+        {
+            if(suma < 1)
+            {
+                Console.WriteLine($"Nu ati introdus o suma valida");
+                return null;
+            }
+            if(suma > Sold)
+            {
+                Console.WriteLine($"Nu aveti destui bani in cont");
+                return null;
+            }
+
+            Tranzactie tranzactie = new Tranzactie
+            {
+                Data = DateTime.Now,
+                Status = StatusTranzactie.Creata,
+                IbanExpeditor = CodBancar,
+                IbanDestinatar = iban,
+                Suma = suma
+            };
+            return tranzactie;
         }
 
         public decimal InterogareSold()

@@ -42,7 +42,6 @@ namespace Banca
             AlegeOperatiune(db);
 
             log.Info($"Main: App Banca stopped {Environment.UserDomainName}.{Environment.UserName}");
-            Console.ReadKey();
         }
 
         private static void AlegeOperatiune(Date db)
@@ -55,7 +54,8 @@ namespace Banca
             Console.WriteLine("5. Depunere numerar");
             Console.WriteLine("6. Retragere numerar");
             Console.WriteLine("7. Verifica sold");
-            Console.WriteLine("8. Transfera bani");
+            Console.WriteLine("8. Transfera interbancar");
+            Console.WriteLine("9.Transfer local");
             Console.WriteLine("Tastati cifra din fata operatiunii pt a alege");
             ConsoleKeyInfo tastaApasata = Console.ReadKey();
             switch (tastaApasata.Key)
@@ -83,11 +83,58 @@ namespace Banca
                     log.Info("A. Utilizatorul a ales optiunea retragere numerar.");
                     RetragereNumerar(db);
                     break;
+                case ConsoleKey.D7:
+                    log.Info("A. Utilizatorul a ales optiunea de a-si verifica soldul curent.");
+                    VerificaSold(db);
+                    break;
+                case ConsoleKey.D8:
+                    log.Info("A. Utilizatorul a ales optiunea de a face un transfer interbancar");
+                    TransferInterbancar(db);
+                    break;
+                case ConsoleKey.D9:
+                    log.Info("A. Utilizatorul a ales optiunea de a face un transfer local");
+                    TransferLocal(db);
+                    break;
                 default:
                     log.Info("A. Utilizatorul Nu a selectat nici optiune valida.");
                     Console.WriteLine("Nu ati selectat nici optiune valida");
-                    AlegeOperatiune(db);
                     break;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Doriti o noua operatiune? Y/N");
+
+            ConsoleKeyInfo keyInfo = Console.ReadKey();
+            if (keyInfo.Key == ConsoleKey.Y)
+            {
+                AlegeOperatiune(db);
+            }
+        }
+
+        private static void VerificaSold(Date db)
+        {
+            Console.WriteLine("Care este numele dvs?");
+            string numeUtilizator = Console.ReadLine();
+            Console.WriteLine("Care este parola dvs?");
+            string parolaUtilizator = Console.ReadLine();
+            ContBancar contDeVerificat = null;
+            foreach (var cont in db.ConturiBancare)
+            {
+                if (cont.Nume == numeUtilizator && cont.Parola == parolaUtilizator)
+                {
+                     contDeVerificat = cont;
+                    break;
+                }
+            }
+            if (contDeVerificat == null)
+            {
+                Console.WriteLine("Contul nu a fost gasit");
+                log.Warn("Contul nu a fost gasit");
+            }
+            else
+            {
+                Console.WriteLine($"Soldul este {contDeVerificat.Sold}");
+                log.Info($"Soldul este {contDeVerificat.Sold}");
             }
         }
 
@@ -291,6 +338,121 @@ namespace Banca
                 Console.WriteLine($"Suma nu a fost retrasa");
                 log.Warn($"Suma nu a fost retrasa");
             }
+        }
+        private static void TransferLocal(Date db)
+        {
+            string message = string.Empty;
+            Console.WriteLine("Introaduceti numele utilizatorului.");
+            string numeUtilizator = Console.ReadLine();
+            Console.WriteLine("Introduceti parola");
+            string parola = Console.ReadLine();
+            ContBancar contInitializator = null;
+            foreach(var contCautat in db.ConturiBancare)
+            {
+                if((numeUtilizator == contCautat.Nume) && (parola == contCautat.Parola)) 
+                {
+                    contInitializator = contCautat;
+                    break;
+                }
+            }
+            //aici anunt utilizatorul ca nu am gasit contul conform cu datele trimise de el
+            if (contInitializator == null)
+            {
+                Console.WriteLine("Contul nu a fost gasit.");
+                log.Warn("Nu exista contul in baza de date.");
+                return;
+            }
+            //aici cer utilizatorului sa imi zica iban-ul in care vrea sa transfere bani
+            Console.WriteLine("Introduceti codul IBAN aferent contului in care doriti sa transferati bani.");
+            string contIban = Console.ReadLine();
+            ContBancar contReceptor = null;
+            //aici vreau sa caut contul in care vreau sa trimit bani
+            foreach(var contCautat in db.ConturiBancare)
+            {
+                if(contIban == contCautat.CodBancar)
+                {
+                    contReceptor = contCautat;
+                    break;
+                }
+            }
+            if(contReceptor == null)
+            {
+                Console.WriteLine("Contul nu a fost gasit.");
+                log.Warn("Contul nu a fost gasit.");
+                return;
+            }
+            Console.WriteLine("Ce suma doriti sa transferati?");
+            string sumaDeTransferatString = Console.ReadLine();
+            bool sumaTransferata = int.TryParse(sumaDeTransferatString, out int sumaDeTransferat);
+            if(sumaTransferata == true)
+            {
+                RaspunsComplex raspuns = contInitializator.TransferaLocal(sumaDeTransferat, contReceptor);
+                if (raspuns.Succes)
+                {
+                    db.SaveData();
+                    Console.WriteLine(raspuns.Mesaj);
+                    log.Info(raspuns.Mesaj);
+                }
+                else
+                {
+                    Console.WriteLine(raspuns.Mesaj);
+                    log.Warn(raspuns.Mesaj);
+                }
+            }
+            else
+            {
+                message = $"Suma introdusa nu este valida.";
+                Console.WriteLine(message);
+                log.Warn(message);
+            }
+        }
+        private static void TransferInterbancar(Date db)
+        {
+            string message = string.Empty;
+            Console.WriteLine("Care este numele dvs?");
+            string numeUtilizator = Console.ReadLine();
+            Console.WriteLine("Care este parola dvs?");
+            string parola = Console.ReadLine();
+            ContBancar contInitializator = null;
+            foreach (var cont in db.ConturiBancare)
+            {
+                if( numeUtilizator == cont.Nume &&parola ==cont.Parola)
+                {
+                    contInitializator = cont;
+                    break;
+                }
+            }
+            if (contInitializator == null)
+            {
+                message = $"Contul cautat nu a fost gasit.";
+                Console.WriteLine(message);
+                log.Warn(message);
+                return;
+            }
+            Console.WriteLine("Introduceti contul Iban");
+            string iban = Console.ReadLine();
+            Console.WriteLine("Introduceti suma pe care vreti sa o transferati.");
+            string sumaDeTransferatstring = Console.ReadLine();
+            bool sumaTransferata = int.TryParse(sumaDeTransferatstring, out int sumaDeTransferat);
+            if (sumaTransferata == true)
+            {
+                Tranzactie tranzactie = contInitializator.TransferaInterbancar(sumaDeTransferat, iban);
+                if (tranzactie != null)
+                {
+                    db.Tranzactii.Add(tranzactie);
+                    db.SaveData();
+                    message = "Tranzactia fost trimisa catre procesare.";
+                    Console.WriteLine(message);
+                    log.Info(message);
+                }
+                else
+                {
+                    message = "Tranzactie esuata";
+                    Console.WriteLine(message);
+                    log.Warn(message);
+                }
+            }
+
         }
     }
 }
