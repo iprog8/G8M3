@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardDebit.cs" />
     <Compile Include="ContBancar.cs" />
     <Compile Include="Date.cs" />
     <Compile Include="Program.cs" />

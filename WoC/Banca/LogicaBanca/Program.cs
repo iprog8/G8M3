@@ -23,8 +23,21 @@ namespace Banca
             log.Info($"App Banca started {Environment.UserDomainName}.{Environment.UserName}");
         }
 
+        static void TestCard()
+        {
+            ContBancar cb = new ContBancar();
+            cb.Nume = "ana";
+            cb.DepunereNumerar(100);
+            CardDebit cardDebit = new CardDebit(cb);
+            decimal sold = cardDebit.Sold;
+            sold = cardDebit.ContBancar.Sold;
+            string nume = cardDebit.Nume;
+            nume = cardDebit.ContBancar.Nume;
+        }
+
         static void Main(string[] args)
         {
+            //TestCard();
             Date db = Date.LoadData<Date>(nameof(Date));
             AlegeOperatiune(db);
 
@@ -41,6 +54,8 @@ namespace Banca
             Console.WriteLine("4. Schimba parola");
             Console.WriteLine("5. Depunere numerar");
             Console.WriteLine("6. Retragere numerar");
+            Console.WriteLine("7. Verifica sold");
+            Console.WriteLine("8. Transfera bani");
             Console.WriteLine("Tastati cifra din fata operatiunii pt a alege");
             ConsoleKeyInfo tastaApasata = Console.ReadKey();
             switch (tastaApasata.Key)
@@ -243,19 +258,19 @@ namespace Banca
                 return;
             }
 
-            //ContBancar contBancar = null;
-            //foreach (var cont in db.ConturiBancare)
-            //{
-            //    if(cont.Nume == utilizator && cont.Parola == parola)
-            //    {
-            //        contBancar = cont;
-            //        break;
-            //    }
-            //}
+            ContBancar contBancar = null;
+            foreach (var cont in db.ConturiBancare)
+            {
+                if (cont.Nume == utilizator && cont.Parola == parola)
+                {
+                    contBancar = cont;
+                    break;
+                }
+            }
 
-            ContBancar contBancar = db.ConturiBancare.FirstOrDefault(cont => cont.Nume == utilizator && cont.Parola == parola);
+            //ContBancar contBancar = db.ConturiBancare.FirstOrDefault(cont => cont.Nume == utilizator && cont.Parola == parola);
 
-            if(contBancar == null)
+            if (contBancar == null)
             {
                 Console.WriteLine($"Contul bancar nu a fost gasit.");
                 log.Warn($"Contul bancar nu a fost gasit.");

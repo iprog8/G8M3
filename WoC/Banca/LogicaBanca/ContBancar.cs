@@ -43,6 +43,7 @@ namespace LogicaBanca
         public string Parola { get; set; }
         public decimal Sold { get; set; }
         public Moneda Moneda { get; set; }
+        public List<CardDebit> CarduriDebit { get; set; }
 
         //public string CreareCont()
         //public string StergeCont()
