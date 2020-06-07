@@ -53,7 +53,11 @@ namespace BazaDate
 
         public void SaveData()
         {
-            string fileData = JsonConvert.SerializeObject(this);
+            var serializerSettings = new JsonSerializerSettings { 
+                PreserveReferencesHandling = PreserveReferencesHandling.Objects 
+            };
+
+            string fileData = JsonConvert.SerializeObject(this, serializerSettings);
             File.WriteAllText(ConnectionString, fileData);
             Log.Info($"SaveData: Baza de date a fost salvata in: {ConnectionString}.");
         }
