@@ -14,30 +14,43 @@ namespace FiguriGeometrice
             Raza = razaCercului;
         }
         private double raza;
-        private double diametru;
         public double Diametru
         {
             get { return raza * 2; }
-            set { diametru = value; }
+            set { Raza = value / 2; }
         }
-        public double Raza {
-            get { return raza; }
-            set { 
-                if (value >= 0) raza = value;
-            } 
-        }
-        public double Pi
+        public double Raza
         {
-            get { return Math.PI; }
-            set { Pi = value; }
+            get { return raza; }
+            set
+            {
+                if (value >= 0) raza = value;
+            }
         }
         public override double CalculeazaArie()
         {
-            return Pi * (Raza * Raza);
+            Aria =  Math.PI * (Raza * Raza);
+            return Aria;
         }
         public override double CalculeazaPerimetru()
         {
-            return Diametru * Pi;
+            Perimetru = Diametru * Math.PI;
+            return Perimetru;
+        }
+
+        double aria = 0;
+        protected internal override double Aria {
+            get { 
+                if(aria == 0)
+                {
+                    return CalculeazaArie();
+                }
+                else
+                {
+                    return aria;
+                }
+            } 
+            set => base.Aria = value; 
         }
     }
 }

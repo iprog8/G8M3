@@ -13,6 +13,8 @@ namespace FiguriGeometrice
         {
             //creare obiecte
             Cerc primulCerc = new Cerc(2.12);
+            primulCerc.Pi = 3;
+
             Cerc alDoileaCerc = new Cerc(50);
             Patrat primulPatrat = new Patrat(-12);
             Patrat alDoileaPatrat = new Patrat(6.123);

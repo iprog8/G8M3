@@ -8,7 +8,7 @@ namespace FiguriGeometrice
 {
     public abstract class FiguriGeometrice
     {
-        protected internal double Aria { get; set; }
+        protected internal virtual double Aria { get; set; }
         protected internal double Perimetru { get; set; }
         public abstract double CalculeazaArie();
         public abstract double CalculeazaPerimetru();

@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace FiguriGeometrice
 {
-    class Cerc: FiguraGeometrica
+    class Cerc : FiguraGeometrica
     {
-        
+
 
         public Cerc(double raza)
         {
-             Raza = raza;
+            Raza = raza;
         }
 
         public double Raza { get; set; }
 
         public override double CalculeazaArie()
         {
-            double aria = 3.14 * Raza * Raza;
+            double aria = Math.PI * Raza * Raza;
             return aria;
         }
 
         public override double CalculeazaPerimetru()
         {
-            double perimetru = 3.14 * Raza * 2;
+            double perimetru = Math.PI * Raza * 2;
             return perimetru;
         }
     }

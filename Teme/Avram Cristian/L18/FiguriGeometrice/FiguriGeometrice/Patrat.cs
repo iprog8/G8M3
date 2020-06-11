@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace FiguriGeometrice
 {
-    class Patrat:Dreptunghi
+    class Patrat : FiguraGeometrica
     {
-        
-        public Patrat(double latura) : base (latura, latura)
+
+        public Patrat(double latura)
         {
             Latura = latura;
         }
 
-        public double Latura {get; set;}
+        public double Latura { get; set; }
 
         public override double CalculeazaArie()
         {
