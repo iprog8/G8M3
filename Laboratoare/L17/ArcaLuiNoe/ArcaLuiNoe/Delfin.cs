@@ -16,5 +16,10 @@ namespace ArcaLuiNoe
         {
             Console.WriteLine($"{Denumire} inota cu viteza {viteza} timp de {timp} => {viteza * timp}.");
         }
+
+        public override void Respira(string aer)
+        {
+            Console.WriteLine($"Delfin respira folosind branhii, nasul si plamanii");
+        }
     }
 }

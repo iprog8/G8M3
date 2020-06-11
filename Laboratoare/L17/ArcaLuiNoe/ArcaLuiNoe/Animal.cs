@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ArcaLuiNoe
 {
-    public class Animal
+    public abstract class Animal
     {
         public Animal(string denumire, Sex sex)
         {
@@ -24,10 +24,9 @@ namespace ArcaLuiNoe
         {
 
         }
-        public void Respira(string aer)
-        {
 
-        }
+        public abstract void Respira(string aer);
+
         public void Comunica()
         {
             //

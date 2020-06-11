@@ -20,5 +20,10 @@ namespace ArcaLuiNoe
         {
 
         }
+
+        public override void Respira(string aer)
+        {
+            Console.WriteLine($"Mamifer respira folosind nasul si plamanii");
+        }
     }
 }
