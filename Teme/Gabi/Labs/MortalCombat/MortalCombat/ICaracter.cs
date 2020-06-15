@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace MortalCombat
 {
-     public interface ICaracter
+    public interface ICaracter
     {
+        Random rnd { get; set; }
         string Nume { get; set; }
         int IBasicAtac { get; set; }
-        //uint IPutereSpeciala { get; set; }
+        int IPutereSpeciala { get; set; }
         int IViata { get; set; }
         int IAtaca();
-        void IFolosestePutereSpeciala();
+        int IFolosestePutereSpeciala();
     }
 }

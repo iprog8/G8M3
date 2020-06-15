@@ -8,11 +8,16 @@ namespace MortalCombat
 {
     public abstract class Luptator : ICaracter
     {
+        public Luptator()
+        {
+            rnd = new Random();
+        }
+        public Random rnd { get; set; }
         public string Nume { get; set; }
         public virtual int IBasicAtac { get; set; }
-        //public virtual uint IPutereSpeciala { get; set; }
+        public virtual int IPutereSpeciala { get; set; }
         public virtual int IViata { get; set; }
         public abstract int IAtaca();
-        public abstract void IFolosestePutereSpeciala();
+        public abstract int IFolosestePutereSpeciala();
     }
 }
