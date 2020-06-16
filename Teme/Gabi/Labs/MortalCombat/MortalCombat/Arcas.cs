@@ -13,14 +13,24 @@ namespace MortalCombat
         public Arcas(string nume)
         {
             IViata = 100;
-            IBasicAtac = 12;
+            IBasicAtac = 14;
             Nume = nume;
         }
-        private int ViataInPlus = 20;
-        private int AtacInPlus = 7;
+        private int ViataInPlus = 25;
+        private int AtacInPlus = 9;
         private int viata;
+        private int putereSpeciala;
         public override int IBasicAtac { get; set; }
-        //public override int IPutereSpeciala { get; set; }
+        public override int IPutereSpeciala {
+            get
+            {
+                return IBasicAtac + AtacInPlus;
+            }
+            set
+            {
+                putereSpeciala = value;
+            }
+        }
         public override int IViata {
             get
             {
@@ -38,15 +48,12 @@ namespace MortalCombat
                 }
             } 
         }
-        public override int IAtaca()
-        {
-            return IBasicAtac;
-        }
-        public override int IFolosestePutereSpeciala()//puterea speciala a arcasului este de a 
+        public override int IFolosestePutereSpeciala()
         {
             Console.WriteLine($"{Nume} si-a regenerat viata cu {ViataInPlus} si si-a marit puterea de atac cu {AtacInPlus}");
             IViata += 20;
-            return IBasicAtac + 7;
+            NumarAtacuriDate++;
+            return IPutereSpeciala;
         }
     }
 }

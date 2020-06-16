@@ -8,7 +8,7 @@ namespace MortalCombat
 {
     public interface ICaracter
     {
-        Random rnd { get; set; }
+        int NumarAtacuriDate { get; set; }
         string Nume { get; set; }
         int IBasicAtac { get; set; }
         int IPutereSpeciala { get; set; }

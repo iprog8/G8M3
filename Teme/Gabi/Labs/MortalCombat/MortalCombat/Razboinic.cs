@@ -10,21 +10,16 @@ namespace MortalCombat
     {
         public Razboinic(string nume)
         {
-            IViata = 200;
-            IBasicAtac = 9;
+            IViata = 150;
+            IBasicAtac = 10;
             Nume = nume;
         }
-        private int ViataAdaugata = 35;
-        //public int Armura { get; set; }
+        public int ViataAdaugata = 30;
         public override int IBasicAtac { get; set; }
-        //public override int IPutereSpeciala { get; set; }
         public override int IViata { get; set; }
-        public override int IAtaca()
+        public override int IFolosestePutereSpeciala()
         {
-            return IBasicAtac;
-        }
-        public override int IFolosestePutereSpeciala()//puterea speciala a razboinicului este de isi mari viata
-        {
+            NumarAtacuriDate++;
             return ViataAdaugata;
         }
     }

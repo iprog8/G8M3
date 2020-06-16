@@ -10,19 +10,12 @@ namespace MortalCombat
     {
         public Magician(string nume)
         {
-            IViata = 50;
-            IBasicAtac = 6;
+            IViata = 70;
+            IBasicAtac = 12;
             Nume = nume;
-            puteriSpeciale = new List<string>() 
-            { 
-                "MingeDeFoc",
-                "Fulger",
-                "Otrava"
-            };
         }
         private int putereSpeciala;
-        public List<string> puteriSpeciale { get; set; }
-        //private int putereSpeciala;
+        private int viata;
         public override int IBasicAtac { get; set; }
         public override int IPutereSpeciala {
             get
@@ -34,7 +27,6 @@ namespace MortalCombat
                 putereSpeciala = value;
             }
         }
-        private int viata;
         public override int IViata
         {
             get
@@ -43,7 +35,7 @@ namespace MortalCombat
             }
             set
             {
-                if (value > 0 && value < 51)
+                if (value > 0 && value < 71)
                 {
                     viata = value;
                 }
@@ -53,14 +45,10 @@ namespace MortalCombat
                 }
             }
         }
-        public override int IAtaca()
-        {
-                return IBasicAtac;
-        }
-        public override int IFolosestePutereSpeciala()//puterea speciala a magicianului este 
+        public override int IFolosestePutereSpeciala()
         {
             Console.WriteLine($"Magicianul a folosit puterea speciala Minge de Foc");
-            //IPutereSpeciala = IBasicAtac * 3;
+            NumarAtacuriDate++;
             return IPutereSpeciala;
         }
     }
