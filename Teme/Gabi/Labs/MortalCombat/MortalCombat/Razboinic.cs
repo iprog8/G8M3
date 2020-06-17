@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MortalCombat
 {
-    public class Razboinic :Luptator
+    public class Razboinic :Luptator, ICaracter
     {
         public Razboinic(string nume)
         {
@@ -15,8 +15,6 @@ namespace MortalCombat
             Nume = nume;
         }
         public int ViataAdaugata = 30;
-        public override int IBasicAtac { get; set; }
-        public override int IViata { get; set; }
         public override int IFolosestePutereSpeciala()
         {
             NumarAtacuriDate++;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MortalCombat
 {
-    public class Magician : Luptator
+    public class Magician : Luptator, ICaracter
     {
         public Magician(string nume)
         {
@@ -16,7 +16,6 @@ namespace MortalCombat
         }
         private int putereSpeciala;
         private int viata;
-        public override int IBasicAtac { get; set; }
         public override int IPutereSpeciala {
             get
             {

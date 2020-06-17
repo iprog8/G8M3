@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MortalCombat
 {
-    public class Arcas : Luptator
+    public class Arcas : Luptator, ICaracter
     {
         public Arcas(string nume)
         {
@@ -20,7 +20,6 @@ namespace MortalCombat
         private int AtacInPlus = 9;
         private int viata;
         private int putereSpeciala;
-        public override int IBasicAtac { get; set; }
         public override int IPutereSpeciala {
             get
             {
@@ -55,5 +54,6 @@ namespace MortalCombat
             NumarAtacuriDate++;
             return IPutereSpeciala;
         }
+
     }
 }

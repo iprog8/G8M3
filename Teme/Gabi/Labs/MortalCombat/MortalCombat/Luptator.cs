@@ -10,7 +10,7 @@ namespace MortalCombat
     {
         public int NumarAtacuriDate { get; set; }
         public string Nume { get; set; }
-        public virtual int IBasicAtac { get; set; }
+        public int IBasicAtac { get; set; }
         public virtual int IPutereSpeciala { get; set; }
         public virtual int IViata { get; set; }
         public int IAtaca()
