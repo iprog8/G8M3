@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortalKombat", "MortalKombat\MortalKombat.csproj", "{52DB9E69-0EFA-43D8-94AA-B465F15569ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MortalKombat.GameEngine", "MortalKombat.GameEngine\MortalKombat.GameEngine.csproj", "{84296563-76CC-41F2-9CE5-86DDA9DD0357}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52DB9E69-0EFA-43D8-94AA-B465F15569ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DB9E69-0EFA-43D8-94AA-B465F15569ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DB9E69-0EFA-43D8-94AA-B465F15569ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DB9E69-0EFA-43D8-94AA-B465F15569ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84296563-76CC-41F2-9CE5-86DDA9DD0357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84296563-76CC-41F2-9CE5-86DDA9DD0357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84296563-76CC-41F2-9CE5-86DDA9DD0357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84296563-76CC-41F2-9CE5-86DDA9DD0357}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B8FF2CC-EC1A-4698-8697-69B0D148B5B0}
+	EndGlobalSection
+EndGlobal
