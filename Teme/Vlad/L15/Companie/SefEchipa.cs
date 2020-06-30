@@ -23,7 +23,7 @@ namespace Companie
         {
             if (muncitor.OreLucrate < 178 && muncitor.SarciniIndeplinite > 45)
             {
-                Console.WriteLine($"Contabilului {muncitor.Nume}i-a fost marit salariul");
+                Console.WriteLine($"Contabilului {muncitor.Nume} i-a fost marit salariul");
    
             }
             else
